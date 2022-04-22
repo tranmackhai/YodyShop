@@ -1,0 +1,49 @@
+@import "../../../Styles/variable";
+
+.nav-menu-drop {
+  z-index: 2;
+  background-color: $white;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0 24px;
+  justify-content: space-between;
+  display: none;
+
+  ul {
+    .title {
+      font-weight: 500;
+      list-style: none;
+      padding: 26px 0;
+      .item-link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $black;
+        text-transform: uppercase;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+    .item {
+      list-style: none;
+      padding-bottom: 24px;
+      .item-link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $dark;
+        font-weight: 400;
+        text-transform: capitalize;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+  .banner {
+    padding: 24px 0;
+    img {
+      max-height: 330px;
+    }
+  }
+}

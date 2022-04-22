@@ -1,0 +1,188 @@
+@import "../../../Styles/variable.scss";
+@import "../../../Styles/animation.scss";
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  .nav-list {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    .nav-item {
+      position: static;
+      list-style: none;
+      margin: 0 20px 0 0;
+      height: 100%;
+      &:hover{
+        .nav-menu-drop{
+          display: flex;
+        }
+      }
+      &:first-child {
+        a {
+          color: $yellow;
+        }
+      }
+      .item-href {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: $dark;
+        position: relative;
+        height: 100%;
+        &:hover {
+          &::before {
+            width: 100%;
+            @include keyframes(hoverbottom) {
+              from {
+                width: 0;
+              }
+              to {
+                width: 100%;
+              }
+            }
+            @include animation(hoverbottom, 0.3s, ease-in, 1);
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: $yellow;
+          height: 2px;
+          width: 0;
+        }
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    .search-box {
+      width: 126px;
+      height: 38px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border: 0.5px solid #ddd;
+      outline: none;
+      font-size: 1.4rem;
+      padding-left: 12px;
+      color: $dark;
+      &:hover {
+        border: 1px solid $yellow;
+      }
+    }
+    .search-btn {
+      color: $white;
+      font-size: 2rem;
+      background-color: $yellow;
+      width: 60px;
+      height: 38px;
+      border: none;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .header-tool {
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+    .user,
+    .like,
+    .cart {
+      margin: 0 8px;
+    }
+    .user {
+      z-index: 2;
+      position: relative;
+      &:hover ul {
+        display: block;
+      }
+      .account-header {
+        position: absolute;
+        list-style: none;
+        font-size: 1.4rem;
+        font-weight: 450;
+        min-width: 172px;
+        height: 70px;
+        background-color: $white;
+        right: 0;
+        top: calc(100% + 12px);
+        display: none;
+        margin: 0;
+        padding: 0;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          background-color: transparent;
+          height: 14px;
+          top: -16%;
+          right: 0;
+        }
+        li {
+          padding: 6px 12px;
+          a {
+            color: $black;
+            &:hover {
+              color: $yellow;
+            }
+          }
+        }
+      }
+    }
+    .cart {
+      z-index: 2;
+      position: relative;
+      &:hover .cart-drop {
+        display: block;
+      }
+      .cart-drop {
+        position: absolute;
+        width: 480px;
+        height: 216px;
+        background-color: $white;
+        right: 0;
+        display: none;
+        top: calc(100% + 10px);
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 20px;
+          background-color: transparent;
+          right: 0;
+          bottom: calc(100%);
+        }
+        .cart-container {
+          .message {
+            font-size: 1.4rem;
+            text-align: center;
+            margin-top: 24px;
+            .clear-fix::after {
+              display: block;
+              clear: both;
+              content: "";
+            }
+            p {
+              color: $black;
+            }
+            a {
+              color: $black;
+              &:hover {
+                color: $yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

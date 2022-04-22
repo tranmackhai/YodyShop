@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1260px;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7a7a9d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #dde1ef;
+  border-radius: 3px;
+}
+
