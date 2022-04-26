@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.scss";
+import "./_navbar.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
 
 const list = [

@@ -4,7 +4,7 @@ import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import "./slider.scss";
+import "./_slider.scss";
 
 const Slider = () => {
   const srcImg = [
@@ -19,13 +19,15 @@ const Slider = () => {
       <Swiper
         modules={[Pagination, Autoplay]}
         slidesPerView={1}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 4000 }}
         pagination={{ clickable: true }}
       >
         {srcImg.map((img, index) => {
           return (
             <SwiperSlide key={index}>
-              <img className="w-100" src={img} alt=""/>
+              <a href="">
+                <img className="w-100" src={img} alt="" />
+              </a>
             </SwiperSlide>
           );
         })}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./navmenudrop.scss";
+import "./_navmenudrop.scss";
 
 const NavMenuDrop = ({ list, imgleft, imgright }) => {
   return (

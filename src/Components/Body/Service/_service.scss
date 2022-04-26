@@ -1,0 +1,25 @@
+@import "../../../Styles/variable";
+
+.service {
+  background-color: $white;
+  margin: 24px 0;
+  .list-service {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    .description {
+      padding-left: 12px;
+      color: $black;
+      font-weight: 400;
+      .description-title {
+        font-size: 1.4rem;
+      }
+      .description-sub-title {
+        font-size: 1.2rem;
+        .description-sub-title-light {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

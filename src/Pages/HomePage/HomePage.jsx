@@ -1,12 +1,12 @@
-import React from 'react';
-import Header from '../../Components/Header/Header';
-import Slider from '../../Components/Slider/Slider';
+import React from "react";
+import Header from "../../Components/Header/Header";
+import Body from "../../Components/Body/Body"
 
 const HomePage = () => {
   return (
     <div>
-      <Header/>
-      <Slider/>
+      <Header />
+      <Body />
     </div>
   );
 };

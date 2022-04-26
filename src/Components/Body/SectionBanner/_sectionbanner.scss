@@ -1,0 +1,14 @@
+@import "../../../Styles/variable";
+
+.section-banner {
+  background-color: $white;
+  .img-effect {
+    img{
+      width: 100%;
+    }
+    margin-bottom: 18px;
+  }
+  .img-swiper {
+    cursor: pointer;
+  }
+}

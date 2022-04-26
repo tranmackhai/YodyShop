@@ -1,0 +1,71 @@
+@import "../../../Styles/variable";
+@import "../../../Styles/animation";
+
+
+.section-slider-product {
+  background-color: $light;
+  padding-bottom: 18px;
+  .section-image {
+    img {
+      width: 100%;
+    }
+  }
+  .product-content {
+    cursor: grab;
+    margin-top: 24px;
+    position: relative;
+    .swiper {
+      &:hover {
+        .swiper-button-prev {
+          display: block;
+          @include keyframes(hoverleft) {
+            from {
+              left: 0;
+            }
+            to {
+              left: calc(0% + 12px);
+            }
+          }
+          @include animation(hoverleft, 0.2s, ease-in, 1);
+        }
+      }
+      &:hover {
+        .swiper-button-next {
+          display: block;
+          @include keyframes(hoverright) {
+            from {
+              right: 0;
+            }
+            to {
+              right: calc(0% + 12px);
+            }
+          }
+          @include animation(hoverright, 0.2s, ease-in, 1);
+        }
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        transition: all 0.3s;
+        display: none;
+        position: absolute;
+        top: calc(50% - 24px);
+        width: 34px;
+        height: 34px;
+      }
+      .swiper-button-next {
+        &::after {
+          display: none;
+        }
+        background-size: contain;
+        background-image: url("https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/next_bst.svg");
+      }
+      .swiper-button-prev {
+        &::after {
+          display: none;
+        }
+        background-size: contain;
+        background-image: url("https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/prev_bst.svg");
+      }
+    }
+  }
+}
