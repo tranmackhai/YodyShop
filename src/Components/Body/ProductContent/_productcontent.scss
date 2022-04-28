@@ -4,9 +4,14 @@
   font-size: 1.4rem;
   margin-bottom: 10px;
   .product-image {
+    overflow: hidden;
     img {
       width: 100%;
       object-fit: cover;
+      transition: linear 0.3s;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
   }
   .product-name {
@@ -24,27 +29,25 @@
     -webkit-box-orient: vertical;
     white-space: initial;
     &:hover {
-      color: $orange;
+      color: $yellow;
     }
   }
   .product-price-box {
     display: flex;
     align-items: center;
-    font-family: svn-gilroy bold;
     overflow: hidden;
     padding: 6px 0 0 0;
     .price {
       font-weight: 500;
       padding-right: 12px;
       font-size: 1.7rem;
-      color: $orange;
+      color: $yellow;
     }
     .price-old {
       font-size: 1.6rem;
       text-decoration: line-through;
       color: #7a7a9d;
       display: inline;
-      font-family: svn-gilroy;
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./_navbar.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
+import { Link } from "react-router-dom";
 
 const list = [
   {
@@ -288,12 +289,12 @@ const Navbar = () => {
             </a>
           </div>
           <div className="cart">
-            <a href="">
+            <Link to="/cart">
               <img
                 src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/cart.svg?1650423295558"
                 alt=""
               />
-            </a>
+            </Link>
             <div className="cart-drop">
               <div className="cart-container">
                 <div className="message">

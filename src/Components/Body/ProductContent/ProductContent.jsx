@@ -1,4 +1,5 @@
 import React from "react";
+import { castToVND } from "../../../Utils";
 import "./_productcontent.scss"
 
 const ProductContent = ({product}) => {
@@ -11,8 +12,8 @@ const ProductContent = ({product}) => {
         <h3 className="product-name">{product.name}</h3>
       </a>
       <div className="product-price-box">
-        <div className="price">{product.price}</div>
-        <div className="price-old">{product.priceold}</div>
+        <div className="price">{castToVND(product.price)}</div>
+        <div className="price-old">{castToVND(product.priceold)}</div>
       </div>
     </div>
   );

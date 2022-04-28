@@ -1,0 +1,113 @@
+@import "../../Styles/variable";
+@import "../../Styles/animation";
+
+.footer {
+  position: relative;
+  .btn-backtop{
+    position: fixed;
+    z-index: 999;
+    right: 16px ;
+    bottom: 30px;
+    font-size: 2.2rem;
+    padding: 4px 14px;
+    background-color: #ee4d2d;
+    color: white;
+    border-radius: 4px;
+    border: none;
+  }
+  background-color: $footer;
+  .footer-content {
+    border-bottom: 1px solid $gray;
+    padding-bottom: 56px;
+    .list-footer {
+      color: $white;
+      font-size: 1.4rem;
+      padding-top: 54px;
+      .commit {
+        padding-bottom: 12px;
+        text-align: justify;
+      }
+      .title {
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      .footer-register {
+        margin-bottom: 24px;
+        font-size: 1.6rem;
+        .search {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          outline: none;
+          border: 0.5px solid #ddd;
+          background: rgba(255, 255, 255, 0.3);
+          padding: 8px 12px;
+          width: 60%;
+          color: $white;
+          &::placeholder {
+            color: $white;
+          }
+        }
+        .btn-search {
+          margin: 0;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          border: 0.5px solid #ddd;
+          color: $yellow;
+          background-color: $white;
+          padding: 8px 24px;
+          &:hover {
+            background-color: $yellow;
+            color: $white;
+          }
+        }
+      }
+      .list-icon {
+        display: flex;
+        .icon {
+          margin-right: 8px;
+          transition: linear 0.5s;
+          &:hover {
+            transform: rotate(30deg);
+          }
+        }
+      }
+    }
+    .menu {
+      list-style: none;
+      padding: 0 0 6px 0;
+      margin-bottom: 24px;
+      .menu-item {
+        padding: 2px 0;
+        color: $white;
+        a {
+          &:hover {
+            color: $yellow;
+          }
+          color: $white;
+        }
+      }
+      .last-text {
+        font-size: 1.6rem;
+        display: flex;
+        img {
+          margin-right: 12px;
+        }
+      }
+      .block-text {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 12px;
+      }
+    }
+  }
+  .lisence {
+    padding: 18px 0;
+    text-align: center;
+    color: $white;
+    font-size: 1.3rem;
+    a {
+      color: $yellow;
+    }
+  }
+}
