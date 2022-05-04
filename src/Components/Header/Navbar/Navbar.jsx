@@ -78,29 +78,26 @@ const list = [
       {
         title: "ÁO",
         items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
+          { title: "Áo Thun" },
+          { title: "Áo Polo Nam" },
+          { title: "Áo Sơ Mi Nam" },
+          { title: "Áo Ba Lỗ" },
+          { title: "Áo Khoác Nam" },
+          { title: "Áo Vest Nam" },
         ],
       },
       {
         title: "QUẦN",
         items: [
-          { title: "Quần Jean Nữ " },
-          { title: "Quần âu nữ" },
-          { title: "quần kaki nữ" },
-          { title: "quần short Nữ" },
+          { title: "Quần Jean Nam" },
+          { title: "Quần Tây Nam" },
+          { title: "Quần Kaki Nam" },
+          { title: "Quần Short" },
         ],
       },
       {
         title: "Đồ mặc trong",
-        items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
-        ],
+        items: [{ title: "Đồ Lót" }],
       },
       {
         title: "YODY SPORT",
@@ -109,10 +106,11 @@ const list = [
       {
         title: "PHỤ KIỆN",
         items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
+          { title: "Ví nam" },
+          { title: "Thắt lưng nam" },
+          { title: "Giày nam" },
+          { title: "Mũ Nam" },
+          { title: "Phụ Kiện Khác" },
         ],
       },
     ],
@@ -127,42 +125,27 @@ const list = [
       {
         title: "ÁO",
         items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
+          { title: "Áo Thun" },
+          { title: "Áo polo" },
+          { title: "Áo khoác" },
+          { title: "Áo sơ mi" },
         ],
       },
       {
         title: "QUẦN",
-        items: [
-          { title: "Quần Jean Nữ " },
-          { title: "Quần âu nữ" },
-          { title: "quần kaki nữ" },
-          { title: "quần short Nữ" },
-        ],
+        items: [{ title: "Quần dài" }, { title: "Quần short" }],
       },
       {
-        title: "Đồ mặc trong",
-        items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
-        ],
-      },
-      {
-        title: "YODY SPORT",
+        title: "BỘ ĐỒ TRẺ EM",
         items: [{}],
       },
       {
+        title: "VÁY ĐẦM TRẺ EM",
+        items: [{ title: "Chân Váy" }, { title: "Váy trẻ em" }],
+      },
+      {
         title: "PHỤ KIỆN",
-        items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
-        ],
+        items: [{ title: "Phụ kiện khác" }],
       },
     ],
     imgleft:
@@ -180,43 +163,38 @@ const list = [
     name: "yody love",
     list: [
       {
-        title: "ÁO",
+        title: "TIN TỨC",
         items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
+          { title: "Yody news" },
+          { title: "Trải nghiệm khách hàng" },
+          { title: "Showroom Yody" },
+          { title: "Văn hóa Yody" },
+          { title: "Bạn đọc quan tâm" },
         ],
       },
       {
-        title: "QUẦN",
+        title: "PHONG CÁCH THỜI TRANG",
         items: [
-          { title: "Quần Jean Nữ " },
-          { title: "Quần âu nữ" },
-          { title: "quần kaki nữ" },
-          { title: "quần short Nữ" },
+          { title: "Mix and match " },
+          { title: "Mẹo hay" },
+          { title: "Xu hướng thời trang" },
+          { title: "Phong thủy" },
         ],
       },
       {
-        title: "Đồ mặc trong",
-        items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
-        ],
+        title: "STORIES",
+        items: [{ title: "Nhân vật" }, { title: "Theo dòng thời trang" }],
       },
       {
-        title: "YODY SPORT",
-        items: [{}],
+        title: "CHẤT LIỆU VÀ SẢN PHẨM",
+        items: [{ title: "Chất liệu" }, { title: "Sản phẩm" }],
       },
       {
-        title: "PHỤ KIỆN",
+        title: "ƯU ĐÃI",
         items: [
-          { title: "Áo Polo Nữ" },
-          { title: "Áo Sơ Mi Nữ" },
-          { title: "Áo Thun Nữ" },
-          { title: "Áo Khoác Nữ" },
+          { title: "Khuyến mãi" },
+          { title: "Dịch vụ" },
+          { title: "Chính sách" },
         ],
       },
     ],
@@ -265,18 +243,18 @@ const Navbar = () => {
         </div>
         <div className="header-tool">
           <div className="user">
-            <a href="">
+            <Link to="/login">
               <img
                 src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/user.svg?1650423295558"
                 alt=""
               />
-            </a>
+            </Link>
             <ul className="account-header">
               <li>
-                <a href="#">Đăng ký</a>
+                <Link to="/register">Đăng ký</Link>
               </li>
               <li>
-                <a href="#">Đăng nhập</a>
+                <Link to="/login">Đăng nhập</Link>
               </li>
             </ul>
           </div>

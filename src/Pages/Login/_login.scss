@@ -1,0 +1,68 @@
+@import "../../Styles/variable";
+
+.bgr-image {
+  position: relative;
+  padding: 130px 0;
+  background: url("https://bizweb.dktcdn.net/100/438/408/themes/858544/assets/bg_login.jpg?1651219582126")
+    center no-repeat;
+  .form-login-register {
+    padding: 60px 0;
+    background-color: $white;
+    display: block;
+    text-align: center;
+    width: 660px;
+    margin: 0 auto;
+    max-width: 100%;
+    .group-frame {
+      padding: 0 107px;
+      .header {
+        color: $yellow;
+      }
+      .text-input {
+        margin-bottom: 12px;
+        font-size: 1.4rem;
+        input {
+          border: 2px solid #eaebf3;
+          border-radius: 3px;
+          width: 100%;
+          min-height: 48px;
+          color: $gray;
+          outline: none;
+          padding: 8px 6px;
+        }
+      }
+      .btn-login {
+        width: 100%;
+        padding: 8px 6px;
+        min-height: 48px;
+        background-color: $yellow;
+        color: $white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      .forgot {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        font-size: 1.4rem;
+        a {
+          color: $black;
+        }
+      }
+      .social-login-register {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+        a {
+          margin-right: 6px;
+        }
+        img {
+          max-width: 30%;
+        }
+      }
+    }
+  }
+}

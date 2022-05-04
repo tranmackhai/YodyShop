@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./_footer.scss";
 
 const Footer = () => {
@@ -35,9 +36,11 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-content container">
-        <button className={visible && "btn-backtop"} onClick={scrollToTop}>
-          <i className="fa-solid fa-arrow-up-long"></i>
-        </button>
+        {visible && (
+          <button className="btn-backtop" onClick={scrollToTop}>
+            <i className="fa-solid fa-arrow-up-long"></i>
+          </button>
+        )}
         <div className="row">
           <div className="list-footer col-lg-4">
             <p className="commit">
@@ -157,7 +160,7 @@ const Footer = () => {
       <div className="lisence">
         <span>
           @ Bản quyền thuộc về
-          <a href="/"> Yody.vn </a>
+          <Link to="/"> Yody.vn </Link>
           All right reserved
         </span>
       </div>

@@ -17,57 +17,57 @@ const list_blog = [
   },
   {
     image:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-ong-rong-mac-voi-ao-gi21-yody-vn.jpg?v=1650334699880",
-    title: "Tia UV là gì? Tác hại và giải pháp bảo vệ làn da",
+      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/phoi-mau-quan-ao.jpg?v=1650962053893",
+    title: "Bật mí 8 mẹo phối màu quần áo phong cách, sành điệu cho từng hoàn cảnh",
     description:
-      "   Tia UV là “kẻ thù” lớn nhất của làn da mỗi khi mùa hè đến. Vậy tia UV là gì? Tìm hiểu tác hại nguy hiểm của tia UV và những giải pháp an toàn mà bạn...",
+      "   Nắm được những cách phối màu quần áo sau đây sẽ giúp bạn có thể mặc đẹp mỗi ngày, và biến mọi outfit trở nên thật sành điệu dù là đi học, đi chơi hay đi làm.",
     icon: "fa-solid fa-clock",
-    time: "19/04/2022",
+    time: "12/04/2022",
   },
   {
     image:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-ong-rong-mac-voi-ao-gi21-yody-vn.jpg?v=1650334699880",
-    title: "Tia UV là gì? Tác hại và giải pháp bảo vệ làn da",
+      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/sinh-nhat-yody-8-tuoi.png?v=1648733773757",
+    title: "Mừng sinh nhật YODY 8 tuổi - Tặng 8888 phần quà miễn phí ",
     description:
-      "   Tia UV là “kẻ thù” lớn nhất của làn da mỗi khi mùa hè đến. Vậy tia UV là gì? Tìm hiểu tác hại nguy hiểm của tia UV và những giải pháp an toàn mà bạn...",
+      "   Kỷ niệm sinh nhật 8 tuổi, YODY tổ chức chương trình tri ân lớn dành tặng đến tất cả khách hàng. Những món quà “cực hấp dẫn” đang chờ đón bạn vào tháng 4 này. Chương trình diễn ra từ 1/4 - 1/5/2022.",
     icon: "fa-solid fa-clock",
-    time: "19/04/2022",
+    time: "28/04/2022",
   },
   {
     image:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-ong-rong-mac-voi-ao-gi21-yody-vn.jpg?v=1650334699880",
-    title: "Tia UV là gì? Tác hại và giải pháp bảo vệ làn da",
+      "https://bizweb.dktcdn.net/100/438/408/articles/mix-match.jpg?v=1651051420387",
+    title: "Top 5 cách phối chân váy jean dài đẹp nhất cho mùa hè",
     description:
-      "   Tia UV là “kẻ thù” lớn nhất của làn da mỗi khi mùa hè đến. Vậy tia UV là gì? Tìm hiểu tác hại nguy hiểm của tia UV và những giải pháp an toàn mà bạn...",
+      "   Chân váy jean dài mix match với áo gì đẹp nhất? Hãy cùng tìm hiểu cách phối chân váy jean để nàng có tổng thể hài hòa và không bao giờ lỗi mốt nhé.",
     icon: "fa-solid fa-clock",
-    time: "19/04/2022",
+    time: "27/04/2022",
   },
   {
     image:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-ong-rong-mac-voi-ao-gi21-yody-vn.jpg?v=1650334699880",
-    title: "Tia UV là gì? Tác hại và giải pháp bảo vệ làn da",
+      "https://bizweb.dktcdn.net/100/438/408/articles/ao-polo-la-gi2-yody-vn.jpg?v=1649919223683",
+    title: "Áo Polo là gì? Các kiểu áo Polo và cách phối vạn người mê",
     description:
-      "   Tia UV là “kẻ thù” lớn nhất của làn da mỗi khi mùa hè đến. Vậy tia UV là gì? Tìm hiểu tác hại nguy hiểm của tia UV và những giải pháp an toàn mà bạn...",
+      "Là items thông dụng trong tủ đồ của mỗi người, nhưng bạn đã biết áo Polo là gì? Cách mix match làm sao để luôn thời thượng và thu hút. Tìm hiểu qua bài viết dưới đây.",
     icon: "fa-solid fa-clock",
-    time: "19/04/2022",
+    time: "14/04/2022",
   },
   {
     image:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-ong-rong-mac-voi-ao-gi21-yody-vn.jpg?v=1650334699880",
-    title: "Tia UV là gì? Tác hại và giải pháp bảo vệ làn da",
+      "https://bizweb.dktcdn.net/100/438/408/articles/quan-short-jean-nam.jpg?v=1648529445650",
+    title: "Tuyển chọn mẫu quần short jean nam đẹp chuẩn “tài tử điện ảnh",
     description:
-      "   Tia UV là “kẻ thù” lớn nhất của làn da mỗi khi mùa hè đến. Vậy tia UV là gì? Tìm hiểu tác hại nguy hiểm của tia UV và những giải pháp an toàn mà bạn...",
+      "Quần Short Jean nam là lựa chọn hoàn hảo cho những buổi xuống phố. Thiết kế dễ mặc, dễ phối đồ, cử động thoải mái. Dưới đây là những mẫu quần Short nam giúp biến hóa đa năng cho các chàng trong mỗi buổi đi chơi, hẹn hò.",
     icon: "fa-solid fa-clock",
-    time: "19/04/2022",
+    time: "29/03/2022",
   },
   {
     image:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-ong-rong-mac-voi-ao-gi21-yody-vn.jpg?v=1650334699880",
-    title: "Tia UV là gì? Tác hại và giải pháp bảo vệ làn da",
+      "https://bizweb.dktcdn.net/100/438/408/articles/chinh-sach-giam-gia-san-pham-yody-vn.jpg?v=1634608923990",
+    title: "Chính sách giảm giá sản phẩm của YODY",
     description:
-      "   Tia UV là “kẻ thù” lớn nhất của làn da mỗi khi mùa hè đến. Vậy tia UV là gì? Tìm hiểu tác hại nguy hiểm của tia UV và những giải pháp an toàn mà bạn...",
+      "YODY thông báo về Chính sách giảm giá sản phẩm trên toàn hệ thống. Chương trình được áp dụng cho tất cả khách hàng khi mua trực tiếp tại các cửa hàng hoặc qua website Yody.vn.",
     icon: "fa-solid fa-clock",
-    time: "19/04/2022",
+    time: "11/03/2022",
   },
 ];
 const SectionBlog = () => {
@@ -82,7 +82,7 @@ const SectionBlog = () => {
             <Swiper
               navigation={true}
               spaceBetween={20}
-              slidesPerView={6}
+              slidesPerView={5}
               modules={[Navigation]}
               className="mySwiper"
             >
