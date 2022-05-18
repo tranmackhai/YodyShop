@@ -26,7 +26,7 @@ const Slider = () => {
           return (
             <SwiperSlide key={index}>
               <a href="">
-                <img className="w-100" src={img} alt="" />
+                <img className="header-banner w-100" src={img} alt="" />
               </a>
             </SwiperSlide>
           );

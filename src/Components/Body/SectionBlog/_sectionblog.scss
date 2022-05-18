@@ -1,10 +1,16 @@
 @import "../../../Styles/variable";
 @import "../../../Styles/animation";
+@import "../../../Styles/responsive";
 
 .list-blog {
   cursor: grab;
   margin-top: 24px;
   position: relative;
+  @include tablet {
+    .swiper-slide {
+      margin-right: 10px !important;
+    }
+  }
   .blog-image {
     img {
       width: 100%;

@@ -5,9 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 const SectionProduct = () => {
   const [products, setProducts] = useState([]);
+  const [showProducts, setShowProducts] = useState(14);
   useEffect(() => {
     fetch("https://json-server-yodyshop.herokuapp.com/data", {
       method: "get",
@@ -37,31 +39,47 @@ const SectionProduct = () => {
           </a>
         </div>
         <div className="product-content">
-          {/* <div className="row" style={{ margin: 0 }}> */}
-            <>
-              <Swiper
-                navigation={true}
-                spaceBetween={20}
-                slidesPerView={6}
-                modules={[Navigation]}
-                className="mySwiper"
-              >
-                {products?.map((product) => {
-                  return (
-                    <SwiperSlide key={product.id}>
-                     
-                    <ProductContent product = {product}/>
-                      
-                    </SwiperSlide>
-                  );
-                })}
-              </Swiper>
-            </>
-          {/* </div> */}
+          <>
+            <Swiper
+              breakpoints={{
+                360: {
+                  width: 375,
+                  slidesPerView: 2.4,
+                },
+                480: {
+                  width: 480,
+                  slidesPerView: 2.4,
+                },
+                768: {
+                  width: 768,
+                  slidesPerView: 4,
+                },
+                1024: {
+                  width: 1224,
+                  slidesPerView: 4,
+                },
+                1224: {
+                  width: 1224,
+                  slidesPerView: 6,
+                },
+              }}
+              navigation={true}
+              spaceBetween={20}
+              slidesPerView={6}
+              modules={[Navigation]}
+              className="mySwiper"
+            >
+              {products?.slice(0, showProducts).map((product) => {
+                return (
+                  <SwiperSlide key={product.id}>
+                    <ProductContent product={product} />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </>
         </div>
-        <a className="more" href="">
-          Xem tất cả 108 sản phẩm
-        </a>
+        <div className="more">Xem tất cả 108 sản phẩm</div>
       </div>
     </section>
   );

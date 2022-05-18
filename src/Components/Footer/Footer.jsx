@@ -13,9 +13,13 @@ const Footer = () => {
     "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_7.png?1646731994406",
   ];
   const [visible, setVisible] = useState(false);
+  const [status, setStatus] = useState(false);
+  const [status2, setStatus2] = useState(false);
+  const [status3, setStatus3] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
+      if (window.scrollY > 400) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -43,6 +47,14 @@ const Footer = () => {
         )}
         <div className="row">
           <div className="list-footer col-lg-4">
+            <div className="logo-footer-mobile">
+              <Link to="/">
+                <img
+                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/logo_footer.png?1652325127725"
+                  alt=""
+                />
+              </Link>
+            </div>
             <p className="commit">
               “Đặt sự hài lòng của khách hàng là ưu tiên số 1 trong mọi suy nghĩ
               hành động của mình” là sứ mệnh, là triết lý, chiến lược luôn cùng
@@ -53,7 +65,7 @@ const Footer = () => {
             </div>
             <div className="footer-register">
               <input
-                type="text"
+                type="email"
                 placeholder="Nhập email đăng ký của bạn"
                 className="search"
               />
@@ -71,10 +83,48 @@ const Footer = () => {
               })}
             </div>
           </div>
-          <div className="list-footer col-lg-2">
+          <div className="list-footer col-lg-2 col-md-3 ">
             <div className="title">
-              <span>Về Yody</span>
+              <span>
+                Về Yody
+                {status ? (
+                  <i
+                    class="icon-up fa-solid fa-caret-up"
+                    onClick={() => {
+                      setStatus(false);
+                    }}
+                  ></i>
+                ) : (
+                  <i
+                    className="icon-down fa-solid fa-sort-down"
+                    onClick={() => {
+                      setStatus(true);
+                    }}
+                  ></i>
+                )}
+              </span>
             </div>
+            {status ? (
+              <ul className="menu-mobile">
+                <li className="menu-item">
+                  <a href="">Giới thiệu</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Liên hệ</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Tuyển dụng</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Tin tức</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Hệ thống cửa hàng</a>
+                </li>
+              </ul>
+            ) : (
+              ""
+            )}
             <ul className="menu">
               <li className="menu-item">
                 <a href="">Giới thiệu</a>
@@ -93,10 +143,48 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="list-footer col-lg-2">
+          <div className="list-footer col-lg-2 col-md-3">
             <div className="title">
-              <span>HỖ TRỢ KHÁCH HÀNG</span>
+              <span>
+                HỖ TRỢ KHÁCH HÀNG
+                {status2 ? (
+                  <i
+                    class="icon-up fa-solid fa-caret-up"
+                    onClick={() => {
+                      setStatus2(false);
+                    }}
+                  ></i>
+                ) : (
+                  <i
+                    className="icon-down fa-solid fa-sort-down"
+                    onClick={() => {
+                      setStatus2(true);
+                    }}
+                  ></i>
+                )}
+              </span>
             </div>
+            {status2 ? (
+              <ul className="menu-mobile">
+                <li className="menu-item">
+                  <a href="">Hướng dẫn chọn size</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Chính sách khách hàng thân thiết</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Chính sách đổi/trả</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Chính sách bảo mật</a>
+                </li>
+                <li className="menu-item">
+                  <a href="">Thanh toán, giao nhận</a>
+                </li>
+              </ul>
+            ) : (
+              ""
+            )}
             <ul className="menu">
               <li className="menu-item">
                 <a href="">Hướng dẫn chọn size</a>
@@ -115,7 +203,65 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="list-footer col-lg-4">
+          <div className="list-footer col-lg-4 col-md-6">
+            <div className="title">
+              <span className="title-mobile" >
+                CÔNG TY CỔ PHẦN THỜI TRANG YODY
+                {status3 ? (
+                  <i
+                    class="icon-up fa-solid fa-caret-up"
+                    onClick={() => {
+                      setStatus3(false);
+                    }}
+                  ></i>
+                ) : (
+                  <i
+                    className="icon-down fa-solid fa-sort-down"
+                    onClick={() => {
+                      setStatus3(true);
+                    }}
+                  ></i>
+                )}
+              </span>
+            </div>
+            {status3 ? (
+              <ul className="menu-mobile">
+                <li className="menu-item last-text">
+                  <img
+                    src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/map.svg?1650954863867"
+                    alt=""
+                  />
+                  <p>
+                    Công ty cổ phần Thời trang YODY <br />
+                    Mã số thuế: 0801206940 <br />
+                    Địa chỉ: Đường An Định - Phường Việt Hoa -<br />
+                    Thành phố Hải Dương - Hải Dương
+                  </p>
+                </li>
+                <li className="menu-item last-text">
+                  <img
+                    src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/phone.svg?1650954863867"
+                    alt=""
+                  />
+                  <div className="block-text">
+                    <a href="">Liên hệ đặt hàng: 024 730 56665</a>
+                    <a href="">Thắc mắc đơn hàng: 024 730 16661</a>
+                    <a href="">Góp ý khiếu nại: 1800 2086</a>
+                  </div>
+                </li>
+                <li className="menu-item last-text">
+                  <img
+                    src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/email.svg?1650954863867"
+                    alt=""
+                  />
+                  <a href="tranmackhai@gmail.com">
+                    Email: chamsockhachhang@yody.vn
+                  </a>
+                </li>
+              </ul>
+            ) : (
+              ""
+            )}
             <ul className="menu">
               <li className="menu-item last-text">
                 <img

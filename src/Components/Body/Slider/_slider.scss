@@ -1,9 +1,23 @@
 @import "../../../Styles/variable";
+@import "../../../Styles/responsive";
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: $white !important;
 }
-.swiper-pagination-bullet-active{
-  background-color: $yellow !important; 
+.swiper-pagination-bullet-active {
+  background-color: $yellow !important;
   border: 1px solid $white;
+}
+
+@include tablet {
+  .header-banner {
+    object-fit: cover;
+    height: 340px;
+  }
+}
+@include mobile {
+  .header-banner {
+    object-fit: cover;
+    height: 200px;
+  }
 }

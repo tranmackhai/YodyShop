@@ -1,21 +1,22 @@
 @import "../../../Styles/variable";
+@import "../../../Styles/responsive";
 
-.Content{
+.Content {
   background-color: $white;
-  .header-content{
-    .title-desktop{
-      .list-title{
+  .header-content {
+    .title-desktop {
+      .list-title {
         padding: 0;
         display: block;
         list-style: none;
         text-align: center;
-        .list-title-item{
+        .list-title-item {
           cursor: pointer;
           display: inline-block;
           padding: 0 20px;
           margin: 0 8px;
           color: $black;
-          border: 1px solid #dde1ef ;
+          border: 1px solid #dde1ef;
           font-size: 1.6rem;
           text-transform: uppercase;
           border-radius: 4px;
@@ -23,15 +24,34 @@
           text-align: center;
           line-height: 38px;
           background-color: $white;
-          &:hover{
+          &:hover {
             background-color: $yellow;
             color: $white;
           }
         }
-        .item-active{
+        .item-active {
           background-color: $yellow;
           color: $white;
         }
+      }
+    }
+  }
+  .product-main {
+    .col-lg-2-5 {
+      padding: 0 10px;
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+    @include tablet {
+      .col-md-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+      }
+    }
+    @include mobile {
+      .col-6 {
+        flex-basis: 50%;
+        max-width: 50%;
       }
     }
   }

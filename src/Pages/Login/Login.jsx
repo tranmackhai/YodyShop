@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "./_login.scss";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="login">
       <Header />
@@ -16,10 +17,13 @@ const Login = () => {
                 <h1>ĐĂNG NHẬP</h1>
               </div>
               <fieldset className="text-input">
-                <input type="text" placeholder="Email" />
+                <input spellCheck = "false" type="email" placeholder="Email" />
               </fieldset>
               <fieldset className="text-input">
-                <input type="text" placeholder="Mật Khẩu" />
+                <input spellCheck = "false" type={showPassword ? "text" : "password"} placeholder="Mật Khẩu" />
+                <span onClick={()=>(setShowPassword(!showPassword))} className="icon-password">
+                  {showPassword ? <i className="fa-solid fa-eye"></i> :  <i className="fa-solid fa-eye-slash"></i>}
+                </span>
               </fieldset>
               <button className="btn-login">Đăng nhập</button>
               <p className="forgot">

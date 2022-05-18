@@ -21,6 +21,7 @@
       .text-input {
         margin-bottom: 12px;
         font-size: 1.4rem;
+        position: relative;
         input {
           border: 2px solid #eaebf3;
           border-radius: 3px;
@@ -29,6 +30,12 @@
           color: $gray;
           outline: none;
           padding: 8px 6px;
+        }
+        .icon-password {
+          position: absolute;
+          left: calc(100% - 36px);
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
       .btn-login {

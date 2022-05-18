@@ -4,7 +4,7 @@ import TopBar from "./TopBar/TopBar";
 
 const Header = () => {
   return (
-    <div>
+    <div style={{position : "fixed", width: "100%", zIndex: "99"}}>
       <TopBar />
       <Navbar />
     </div>

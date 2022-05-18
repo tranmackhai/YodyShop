@@ -6,7 +6,7 @@ const services = [
     img: "https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/ser_1.png?1650597781514",
     title: "Miễn phí giao hàng",
     subtitle: "FREESHIP mọi đơn từ ",
-    subtitlelight: "1/4-30/4",
+    subtitlelight: ">498k",
   },
   {
     img: "https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/ser_2.png?1650597781514",
@@ -34,14 +34,18 @@ const Service = () => {
         <div className="row">
           {services.map((service, index) => {
             return (
-              <div className="list-service col-3" key={index}>
+              <div className="list-service col-lg-3 col-md-3 col-6" key={index}>
                 <img src={service.img} alt="" />
                 <div className="description">
                   <div className="description-title">{service.title}</div>
                   <div className="description-sub-title">
-                    <span className="description-sub-title-light">{service.subtitlelight_left}</span>
+                    <span className="description-sub-title-light">
+                      {service.subtitlelight_left}
+                    </span>
                     {service.subtitle}
-                    <span className="description-sub-title-light">{service.subtitlelight}</span>
+                    <span className="description-sub-title-light">
+                      {service.subtitlelight}
+                    </span>
                   </div>
                 </div>
               </div>

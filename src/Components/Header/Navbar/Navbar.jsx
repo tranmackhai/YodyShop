@@ -1,5 +1,6 @@
 import React from "react";
 import "./_navbar.scss";
+import "../NavMenuDrop/_navmenudrop.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
 import { Link } from "react-router-dom";
 
@@ -9,6 +10,7 @@ const list = [
   },
   {
     name: "nữ",
+    key_mobile: "1",
     list: [
       {
         title: "ÁO",
@@ -74,6 +76,7 @@ const list = [
   },
   {
     name: "nam",
+    key_mobile: "2",
     list: [
       {
         title: "ÁO",
@@ -121,6 +124,7 @@ const list = [
   },
   {
     name: "trẻ em",
+    key_mobile: "3",
     list: [
       {
         title: "ÁO",
@@ -208,88 +212,126 @@ const list = [
 
 const Navbar = () => {
   return (
-    <div className="container">
-      <div className="nav-bar">
-        <a className="logo" href="/">
-          <img src="	https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/logo.svg?1650423295558" />
-        </a>
-        <ul className="nav-list">
-          {list.map((item) => {
-            return (
-              <li className="nav-item" key={item.name}>
-                <a className="item-href" href="#">
-                  {item.name}
-                </a>
-                {item.list && (
-                  <NavMenuDrop
-                    list={item.list}
-                    imgleft={item.imgleft}
-                    imgright={item.imgright}
-                  />
-                )}
-              </li>
-            );
-          })}
-        </ul>
-        <div className="search">
-          <input
-            className="search-box"
-            type={"text"}
-            placeholder="Tìm sản phấm"
-          />
-          <button className="search-btn">
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-        <div className="header-tool">
-          <div className="user">
-            <Link to="/login">
-              <img
-                src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/user.svg?1650423295558"
-                alt=""
-              />
-            </Link>
-            <ul className="account-header">
-              <li>
-                <Link to="/register">Đăng ký</Link>
-              </li>
-              <li>
-                <Link to="/login">Đăng nhập</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="like">
-            <a href="">
-              <img
-                src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/heart.svg?1650423295558"
-                alt=""
-              />
-            </a>
-          </div>
-          <div className="cart">
-            <Link to="/cart">
-              <img
-                src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/cart.svg?1650423295558"
-                alt=""
-              />
-            </Link>
-            <div className="cart-drop">
-              <div className="cart-container">
-                <div className="message">
-                  <img
-                    src="https://bizweb.dktcdn.net/100/438/408/themes/858544/assets/blank_cart.svg?1650243498580"
-                    alt=""
-                  />
-                  <p>Giỏ hàng của bạn trống</p>
-                  <a href="" className="cart-login">
-                    Đăng nhập/Đăng ký
+    <div className="navbar">
+      <div className="container wrapper-container">
+        <div className="navbar-header">
+          <a className="logo" href="/">
+            <img src="	https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/logo.svg?1650423295558" />
+          </a>
+          <ul className="nav-list">
+            {list.map((item) => {
+              return (
+                <li className="nav-item" key={item.name}>
+                  <a className="item-href" href="#">
+                    {item.name}
                   </a>
-                  <span className="clear-fix"></span>
-                  <a href="" className="buy-now">
-                    Mua ngay
-                  </a>
+                  {item.list && (
+                    <NavMenuDrop
+                      list={item.list}
+                      imgleft={item.imgleft}
+                      imgright={item.imgright}
+                    />
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+          <div className="search">
+            <input
+              className="search-box"
+              type={"text"}
+              spellCheck="false"
+              placeholder="Tìm sản phấm"
+            />
+            <button className="search-btn">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div className="header-tool">
+            <div className="user">
+              <Link to="/login">
+                <img
+                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/user.svg?1650423295558"
+                  alt=""
+                />
+              </Link>
+              <ul className="account-header">
+                <li>
+                  <Link to="/register">Đăng ký</Link>
+                </li>
+                <li>
+                  <Link to="/login">Đăng nhập</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="like">
+              <Link to="/like">
+                <img
+                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/heart.svg?1650423295558"
+                  alt=""
+                />
+                <span className="message-box">Sản phẩm yêu thích</span>
+              </Link>
+            </div>
+            <div className="cart">
+              <Link to="/cart">
+                <img
+                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/cart.svg?1650423295558"
+                  alt=""
+                />
+              </Link>
+              <div className="cart-drop">
+                <div className="cart-container">
+                  <div className="message">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/438/408/themes/858544/assets/blank_cart.svg?1650243498580"
+                      alt=""
+                    />
+                    <p>Giỏ hàng của bạn trống</p>
+                    <a href="" className="cart-login">
+                      Đăng nhập/Đăng ký
+                    </a>
+                    <span className="clear-fix"></span>
+                    <a href="" className="buy-now">
+                      Mua ngay
+                    </a>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className="menu-bars">
+              <span className="icon-bars">
+                <i className="fa-solid fa-bars"></i>
+              </span>
+            </div>
+            <div className="nav-overlay"></div>
+            <div className="nav-list-mobile nav-list">
+              {list.map((item) => {
+                if (item.key_mobile) {
+                  return (
+                    <div key={item.name}>
+                      <ul className="nav-item">
+                        <li className="nav-item">
+                          <a href="" className="item-href">
+                            {item.name}
+                          </a>
+                        </li>
+                      </ul>
+                      <ul className="">
+                        {item.list.map((element) => {
+                          return (
+                            <li className="title" key={element.title}>
+                              <a href="" className="item-link">
+                                {element.title}
+                              </a>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  );
+                } else return "";
+              })}
             </div>
           </div>
         </div>

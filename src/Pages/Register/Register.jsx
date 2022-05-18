@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./_register.scss";
 import "../Login/_login.scss";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 
 const Register = () => {
+  const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="register">
       <Header />
@@ -18,23 +19,41 @@ const Register = () => {
               <div className="row">
                 <div className="col-6">
                   <fieldset className="text-input">
-                    <input type="text" placeholder="Tên" />
+                    <input spellCheck="false" type="text" placeholder="Tên" />
                   </fieldset>
                 </div>
                 <div className="col-6" style={{ paddingLeft: "0" }}>
                   <fieldset className="text-input">
-                    <input type="text" placeholder="Họ" />
+                    <input spellCheck="false" type="text" placeholder="Họ" />
                   </fieldset>
                 </div>
               </div>
               <fieldset className="text-input">
-                <input type="text" placeholder="Số điện thoại" />
+                <input
+                  spellCheck="false"
+                  type="text"
+                  placeholder="Số điện thoại"
+                />
               </fieldset>
               <fieldset className="text-input">
-                <input type="text" placeholder="Email" />
+                <input spellCheck="false" type="email" placeholder="Email" />
               </fieldset>
               <fieldset className="text-input">
-                <input type="text" placeholder="Mật khẩu" />
+                <input
+                  spellCheck="false"
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Mật khẩu"
+                />
+                <span
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="icon-password"
+                >
+                  {showPassword ? (
+                    <i className="fa-solid fa-eye"></i>
+                  ) : (
+                    <i className="fa-solid fa-eye-slash"></i>
+                  )}
+                </span>
               </fieldset>
               <div className="box-interests">
                 <p>Sở thích</p>
@@ -66,9 +85,7 @@ const Register = () => {
                   <label htmlFor="radio-3">Thời trang trẻ em</label>
                 </span>
               </div>
-              <button className="btn-register">
-                Đăng ký
-              </button>
+              <button className="btn-register">Đăng ký</button>
               <div className="social-login-register">
                 <p className="a-center or">
                   <span>--- Hoặc ---</span>

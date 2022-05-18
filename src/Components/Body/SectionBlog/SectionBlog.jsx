@@ -80,6 +80,28 @@ const SectionBlog = () => {
         <div className="list-blog">
           <>
             <Swiper
+              breakpoints={{
+                360: {
+                  width: 375,
+                  slidesPerView: 2,
+                },
+                480: {
+                  width: 480,
+                  slidesPerView: 2,
+                },
+                768: {
+                  width: 768,
+                  slidesPerView: 3,
+                },
+                1024: {
+                  width: 1224,
+                  slidesPerView: 3,
+                },
+                1224: {
+                  width: 1224,
+                  slidesPerView: 5,
+                },
+              }}
               navigation={true}
               spaceBetween={20}
               slidesPerView={5}

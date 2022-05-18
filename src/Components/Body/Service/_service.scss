@@ -1,21 +1,71 @@
 @import "../../../Styles/variable";
+@import "../../../Styles/responsive";
 
 .service {
   background-color: $white;
   margin: 24px 0;
+  @include mobile {
+    padding: 0 6px;
+  }
+  @include mobile {
+    img {
+      width: 29px;
+      height: 29px;
+    }
+  }
   .list-service {
     padding: 0 30px;
     display: flex;
     align-items: center;
+    @include tablet {
+      padding: 0 16px;
+    }
+    @include mobile {
+      padding: 6px 12px;
+      &:first-child {
+        border: solid 1px rgb(221, 225, 239);
+        border-top-left-radius: 4px;
+      }
+      &:nth-child(2) {
+        border-top: solid 1px rgb(221, 225, 239);
+        border-right: solid 1px rgb(221, 225, 239);
+        border-bottom: solid 1px rgb(221, 225, 239);
+        border-top-right-radius: 4px;
+      }
+      &:nth-child(3) {
+        border-left: solid 1px rgb(221, 225, 239);
+        border-bottom: solid 1px rgb(221, 225, 239);
+        border-right: solid 1px rgb(221, 225, 239);
+        border-bottom-left-radius: 4px;
+      }
+      &:nth-child(4) {
+        border-bottom: solid 1px rgb(221, 225, 239);
+        border-right: solid 1px rgb(221, 225, 239);
+        border-bottom-right-radius: 4px;
+      }
+    }
     .description {
       padding-left: 12px;
       color: $black;
       font-weight: 400;
+
       .description-title {
         font-size: 1.4rem;
+        @include tablet {
+          font-size: 1.1rem;
+        }
+        @include mobile {
+          font-size: 1.2rem;
+        }
       }
       .description-sub-title {
         font-size: 1.2rem;
+        @include tablet {
+          font-size: 1.1rem;
+        }
+        @include mobile {
+          font-size: 1.1rem;
+        }
         .description-sub-title-light {
           color: $yellow;
         }

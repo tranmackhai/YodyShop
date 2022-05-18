@@ -32,6 +32,10 @@ const title = [
 const Content = () => {
   const [active, setActive] = useState("cafe");
   const [products, setProducts] = useState([]);
+  const [visible, setVisible] = useState(20);
+  const loadmore = () => {
+    setVisible((prev) => prev + 10);
+  };
   useEffect(() => {
     fetch("https://json-server-yodyshop.herokuapp.com/data", {
       method: "get",
@@ -77,20 +81,17 @@ const Content = () => {
       <div className="product-main">
         <div className="container">
           <div className="row">
-            {products.map((product) => {
+            {products.slice(0, visible).map((product) => {
               return (
-                <div key={product.id}
-                  className="col-2"
-                  style={{ flexBasis: "20%", maxWidth: "20%" }}
-                >
+                <div key={product.id} className="col-lg-2-5 col-md-3 col-6">
                   <ProductContent product={product} />
                 </div>
               );
             })}
           </div>
-          <a href="" className="more">
+          <div onClick={() => loadmore()} className="more">
             Xem thêm
-          </a>
+          </div>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const NavMenuDrop = ({ list, imgleft, imgright }) => {
       <div className="row" style={{padding: "0 12px", flex: 1}}>
         {list.map((item) => {
           return (
-            <ul className="col" style={{maxWidth: "20%", flexBasis: "20%"}} key={item.title}>
+            <ul className="col" style={{}} key={item.title}>
               <li className="title">
                 <a className="item-link" href="">
                   {item.title}

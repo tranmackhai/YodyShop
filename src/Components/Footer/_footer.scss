@@ -1,18 +1,34 @@
 @import "../../Styles/variable";
 @import "../../Styles/animation";
+@import "../../Styles/responsive";
 
 .footer {
   position: relative;
-  .btn-backtop{
+  // margin-top: 64px;
+  .logo-footer-mobile {
+    display: none;
+    @include mobile {
+      display: block;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+  }
+
+  @include tablet {
+    .footer-content {
+      padding: 0 48px 40px 48px !important;
+    }
+  }
+  .btn-backtop {
     position: fixed;
-    z-index: 999;
-    right: 16px ;
-    bottom: 30px;
+    z-index: 5;
+    right: 16px;
+    bottom: 15%;
     font-size: 2.2rem;
     padding: 4px 14px;
     background-color: #ee4d2d;
     color: white;
-    border-radius: 4px;
+    border-radius: 50%;
     border: none;
   }
   background-color: $footer;
@@ -20,6 +36,9 @@
     border-bottom: 1px solid $gray;
     padding-bottom: 56px;
     .list-footer {
+      @include mobile {
+        padding-top: 24px;
+      }
       color: $white;
       font-size: 1.4rem;
       padding-top: 54px;
@@ -30,6 +49,32 @@
       .title {
         text-transform: uppercase;
         margin-bottom: 6px;
+        .title-mobile {
+          display: none;
+          @include mobile {
+            display: block;
+          }
+        }
+        .icon-down {
+          display: none;
+        }
+        .icon-up {
+          display: none;
+        }
+        @include mobile {
+          .icon-down {
+            display: inline-block;
+            text-align: center;
+            margin-left: 10px;
+            transform: translateY(-4px);
+          }
+          .icon-up {
+            display: inline-block;
+            text-align: center;
+            margin-left: 10px;
+            // transform: translateY(-4px);
+          }
+        }
       }
       .footer-register {
         margin-bottom: 24px;
@@ -72,10 +117,61 @@
         }
       }
     }
+    .menu-mobile {
+      display: none;
+      list-style: none;
+      padding: 0 0 6px 0;
+      margin-bottom: 24px;
+      @include mobile {
+        display: block;
+        margin: 0;
+        animation-fill-mode: forwards;
+        @include keyframes(drop_down) {
+          0% {
+            opacity: 0;
+            transform: rotateX(-90deg);
+          }
+          50% {
+            transform: rotateX(-20deg);
+          }
+          100% {
+            opacity: 1;
+            transform: rotateX(0deg);
+          }
+        }
+        @include animation(drop_down, 300ms, ease-in-out, forwards);
+      }
+      .menu-item {
+        padding: 2px 0;
+        color: $white;
+        a {
+          &:hover {
+            color: $yellow;
+          }
+          color: $white;
+        }
+      }
+      .last-text {
+        font-size: 1.6rem;
+        display: flex;
+        img {
+          margin-right: 12px;
+        }
+      }
+      .block-text {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 12px;
+      }
+    }
     .menu {
       list-style: none;
       padding: 0 0 6px 0;
       margin-bottom: 24px;
+      @include mobile {
+        display: none;
+      }
       .menu-item {
         padding: 2px 0;
         color: $white;

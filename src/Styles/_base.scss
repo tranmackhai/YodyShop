@@ -1,9 +1,10 @@
 @import "./variable";
+@import "./responsive";
 
 * {
   box-sizing: border-box;
 }
-.container{
+.container {
   max-width: 1260px;
 }
 html {
@@ -36,12 +37,16 @@ a:hover {
   border-radius: 4px;
   background-color: $yellow;
   display: block;
+  cursor: pointer;
   align-items: center;
-  margin: 20px auto 10px auto;
+  margin: 20px auto 36px auto;
   font-size: 1.8rem;
   font-weight: 500;
   color: $white;
   border: 1px solid $yellow;
+  @include mobile {
+    margin-bottom: 12px;
+  }
   &:hover {
     background-color: $white;
     color: $yellow;
@@ -51,6 +56,19 @@ a:hover {
 .content-title {
   color: $yellow;
   text-align: center;
-  padding: 40px 0 30px 0;
+  padding: 30px 0 30px 0;
   text-transform: uppercase;
+  h2 {
+    margin: 0;
+  }
+  @include mobile {
+    padding: 20px 0 12px 0;
+  }
+}
+
+.margin-right-12 {
+  margin-right: 12px;
+}
+.text-align-left{
+  text-align: left;
 }
