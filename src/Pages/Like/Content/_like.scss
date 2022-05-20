@@ -1,4 +1,4 @@
-@import "../../Styles/variable";
+@import "../../../Styles/variable";
 
 .like-page {
   .header-like-content {
@@ -24,6 +24,7 @@
     .title-header {
       color: $yellow;
       padding-bottom: 32px;
+      text-transform: uppercase;
     }
     .block-like-account {
       height: 627px;
@@ -34,7 +35,10 @@
         margin-bottom: 36px;
         img {
           margin-top: 28px;
-          // width: 100%;
+          width: 90px;
+          height: 90px;
+          overflow: hidden;
+          object-fit: cover;
         }
         .account {
           margin: 18px 0 6px 0;
@@ -51,6 +55,7 @@
           border-radius: 10px;
           padding: 3px 24px;
           margin-top: 4px;
+          font-size: 1.6rem;
         }
       }
       ul {
@@ -114,6 +119,7 @@
             height: 100px;
           }
           span {
+            font-size: 1.6rem;
             color: #7a7a9d;
             margin: 24px;
           }

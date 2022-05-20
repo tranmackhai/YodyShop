@@ -8,7 +8,6 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="login">
-      <Header />
       <div className="login-content bgr-image">
         <div className="container">
           <div className="form-login-register">
@@ -51,7 +50,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -19,6 +19,7 @@ const Slider = () => {
       <Swiper
         modules={[Pagination, Autoplay]}
         slidesPerView={1}
+        loop = {true}
         autoplay={{ delay: 4000 }}
         pagination={{ clickable: true }}
       >

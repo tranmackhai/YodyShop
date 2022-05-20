@@ -7,21 +7,23 @@ import {
 import Cart from "./Pages/Cart/Cart";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
-import Like from "./Pages/Like/Like";
+import Like from "./Pages/Like/Content/Like";
+import DefaultLayout from "./Pages/Like/DefaultLayout";
+import LikeLayout from "./Pages/Like/LikeLayout/LikeLayout";
 
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<HomePage />}/>
-      <Route path="/cart" element={<Cart />}/>
-      <Route path="/like" element={<Like />}/>
-      <Route path="/login" element={<Login />}/>
-      <Route path="/register" element={<Register />}/>
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DefaultLayout><HomePage /></DefaultLayout>} />
+        <Route path="/cart" element={<DefaultLayout><Cart /></DefaultLayout>} />
+        <Route path="/like" element={<LikeLayout><Like /></LikeLayout>} />
+        <Route path="/login" element={<DefaultLayout><Login /></DefaultLayout>} />
+        <Route path="/register" element={<DefaultLayout><Register /></DefaultLayout>} />
+      </Routes>
+    </BrowserRouter>
   );
-  
+
 }
 
 export default App;

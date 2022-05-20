@@ -5,11 +5,7 @@ import Footer from "../../Components/Footer/Footer";
 
 const HomePage = () => {
   return (
-    <div>
-      <Header />
       <Body />
-      <Footer/>
-    </div>
   );
 };
 

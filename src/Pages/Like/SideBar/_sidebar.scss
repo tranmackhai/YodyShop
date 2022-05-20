@@ -1,0 +1,66 @@
+@import "../../../Styles/variable";
+
+.block-like-account {
+  height: 627px;
+  background-color: $white;
+  border-radius: 4px;
+  padding: 0;
+  text-align: center;
+  .info {
+    margin-bottom: 36px;
+    font-size: 1.4rem;
+    img {
+      margin-top: 28px;
+      width: 90px;
+      height: 90px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    .account {
+      margin: 18px 0 6px 0;
+      .user {
+        color: $black;
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+    .goto-user {
+      color: $white;
+      background-color: $yellow;
+      border-radius: 10px;
+      padding: 3px 24px;
+      margin-top: 4px;
+      font-size: 1.6rem;
+    }
+  }
+  ul {
+    padding: 0;
+    li {
+      padding-left: 18px !important;
+      text-align: left;
+      list-style: none;
+      font-size: 1.4rem;
+      padding: 8px 0;
+      &.active,
+      &:hover {
+        background-color: #feeeea;
+        a {
+          color: $yellow;
+        }
+      }
+      a {
+        color: $black;
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 12px;
+          width: 22px;
+          height: 22px;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
