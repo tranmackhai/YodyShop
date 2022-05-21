@@ -7,10 +7,8 @@
   box-shadow: 0 6px 12px 0 rgb(0 0 0 / 4%);
   background-color: $white;
   .wrapper-container {
-    @include mobile {
-      background-color: $white;
-      position: fixed;
-      z-index: 10;
+    @include tablet {
+      padding: 0;
     }
     .navbar-header {
       display: flex;
@@ -111,6 +109,9 @@
       .search {
         display: flex;
         align-items: center;
+        @include mobile {
+          margin: 0 6px 0 18px;
+        }
         .search-box {
           width: 126px;
           height: 38px;

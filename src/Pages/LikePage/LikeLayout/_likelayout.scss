@@ -1,0 +1,30 @@
+@import "../../../Styles/variable";
+
+.like-page {
+  .header-like-content {
+    text-align: center;
+    padding: 46px 0 18px 0;
+    background-color: #f8f8f8;
+    font-size: 1.4rem;
+    .top-header-like {
+      padding-bottom: 4px;
+      .home {
+        color: $black;
+        &:hover {
+          color: $yellow;
+        }
+      }
+      .separation {
+        margin: 0 8px;
+      }
+      .text-like {
+        color: $yellow;
+      }
+    }
+    .title-header {
+      color: $yellow;
+      padding-bottom: 32px;
+      text-transform: uppercase;
+    }
+  }
+}

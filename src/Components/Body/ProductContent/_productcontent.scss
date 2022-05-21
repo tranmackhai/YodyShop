@@ -11,14 +11,13 @@
       width: 100%;
       object-fit: cover;
       transition: linear 0.3s;
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
   }
   .product-name {
     margin: 0;
-    font-weight: inherit;
     color: $black;
     text-transform: capitalize;
     min-height: 40px;
@@ -29,7 +28,7 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     white-space: initial;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     @include tablet {
       font-size: 1.2rem;
     }
@@ -64,6 +63,21 @@
       }
       @include mobile {
         font-size: 1.1rem;
+      }
+    }
+  }
+  .option-view {
+    margin: 4px 0 8px 0;
+    .view-color {
+      margin-right: 8px;
+      cursor: pointer;
+      img {
+        border-radius: 50%;
+        border: 0.5px solid rgb(243, 237, 237);
+        overflow: hidden;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
       }
     }
   }

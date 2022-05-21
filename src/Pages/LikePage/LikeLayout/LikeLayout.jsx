@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../../Components/Footer/Footer";
 import Header from "../../../Components/Header/Header";
 import SideBar from "../SideBar/SideBar";
+import "./_likelayout.scss";
 
 const LikeLayout = ({ children }) => {
   const list_item = [
