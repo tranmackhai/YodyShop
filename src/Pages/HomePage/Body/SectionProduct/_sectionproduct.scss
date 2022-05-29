@@ -1,6 +1,6 @@
-@import "../../../Styles/variable";
-@import "../../../Styles/animation";
-@import "../../../Styles/responsive";
+@import "../../../../Styles/variable";
+@import "../../../../Styles/animation";
+@import "../../../../Styles/responsive";
 
 .section-slider-product {
   background-color: $light;
@@ -86,6 +86,21 @@
     .item-product {
       .option-view{
         display: none;
+      }
+    }
+    .swiper-slide{
+      text-align: center;
+      height: initial;
+      .swiper-end{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(254,238,234);
+        width: 100%;
+        height: 100%;
       }
     }
   }

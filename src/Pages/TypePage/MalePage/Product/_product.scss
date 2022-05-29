@@ -1,0 +1,25 @@
+@import "../../../../Styles/variable";
+
+.product {
+  .propose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    .propose-item {
+      padding: 8px 18px;
+      color: $black;
+      background-color: $white;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      margin: 0 12px;
+      border-radius: 4px;
+      border: 1px solid #dde1ef;
+      cursor: pointer;
+      &:hover, &.active{
+        background-color: $yellow;
+        color: $white;
+      }
+    }
+  }
+}

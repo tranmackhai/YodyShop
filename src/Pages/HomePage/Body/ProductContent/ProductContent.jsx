@@ -1,5 +1,5 @@
 import React from "react";
-import { castToVND } from "../../../Utils";
+import { castToVND } from "../../../../Utils";
 import "./_productcontent.scss";
 
 const ProductContent = ({ product }) => {

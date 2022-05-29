@@ -1,6 +1,6 @@
-@import "../../../Styles/variable";
-@import "../../../Styles/animation";
-@import "../../../Styles/responsive";
+@import "../../../../Styles/variable";
+@import "../../../../Styles/animation";
+@import "../../../../Styles/responsive";
 
 .list-blog {
   cursor: grab;
@@ -15,7 +15,6 @@
     img {
       width: 100%;
       object-fit: cover;
-      height: 153px;
     }
   }
   .box-infor {
@@ -36,8 +35,8 @@
       }
     }
     .blog-description {
-      font-size: 1.2rem;
-      color: $dark;
+      font-size: 1.3rem;
+      color: #7a7a9d;
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
@@ -47,6 +46,7 @@
     .blog-time {
       i {
         margin: 0 4px;
+        font-size: 1.2rem;
       }
       font-size: 1rem;
       color: $gray;

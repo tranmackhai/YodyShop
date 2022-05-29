@@ -86,7 +86,6 @@ const LikeLayout = ({ children }) => {
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );

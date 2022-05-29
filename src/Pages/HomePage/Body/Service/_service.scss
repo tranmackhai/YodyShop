@@ -1,9 +1,9 @@
-@import "../../../Styles/variable";
-@import "../../../Styles/responsive";
+@import "../../../../Styles/variable";
+@import "../../../../Styles/responsive";
 
 .service {
-  background-color: $white;
-  margin: 24px 0;
+  background-color: #f8f8f8;
+  padding: 18px 0;
   @include mobile {
     padding: 0 6px;
   }
@@ -50,7 +50,7 @@
       font-weight: 400;
 
       .description-title {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         @include tablet {
           font-size: 1.1rem;
         }
@@ -59,7 +59,7 @@
         }
       }
       .description-sub-title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         @include tablet {
           font-size: 1.1rem;
         }

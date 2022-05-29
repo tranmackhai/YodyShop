@@ -1,0 +1,12 @@
+@import "../../../../Styles/variable";
+
+.banner{
+  .top-banner{
+    .img-effect{
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -76,6 +76,10 @@ const SectionProduct = () => {
                   </SwiperSlide>
                 );
               })}
+              <SwiperSlide className="swiper-slide">
+                <Link className="swiper-end" to="/bts-xuan-he">Xem tất cả
+                <img src="https://bizweb.sapocdn.net/100/438/408/themes/862083/assets/right_color.svg" alt="" /></Link>
+              </SwiperSlide>
             </Swiper>
           </>
         </div>

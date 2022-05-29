@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./_like.scss";
-import "../../../../Components/Body/ProductContent/_productcontent.scss";
+import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
 import { castToVND } from "../../../../Utils";
 import data from "../../../../data.json";
 import { Link } from "react-router-dom";
@@ -8,7 +8,14 @@ import { Link } from "react-router-dom";
 const Like = () => {
   const [visible, setVisible] = useState(16);
   const loadmore = () => {
-    setVisible((prev) => prev + 4);
+    setVisible((prev) => {
+      if (prev >= data.length) {
+        prev = 16;
+      } else if (prev >= 16) {
+        prev = prev + 8;
+      }
+      return prev;
+    });
   };
   const showImages = (images) => {
     const arr = [];
@@ -43,14 +50,14 @@ const Like = () => {
         <h1>CÓ THỂ BẠN MUỐN MUA</h1>
         <div className="row">
           {data.slice(0, visible).map((item) => {
-            console.log(item);
+            // console.log(item);
             return (
               <div
                 key={item.id}
                 className="item-product col-lg-3"
                 style={{ paddingRight: "5px" }}
               >
-                <a href="">
+                <a href="#">
                   <div className="product-image">
                     <img src={item.image} alt="" />
                   </div>
@@ -79,7 +86,7 @@ const Like = () => {
           to=""
           className="more"
         >
-          Xem thêm sản phẩm
+          {visible < data.length ? "Xem thêm" : "Thu gọn"}
         </Link>
       </div>
     </div>

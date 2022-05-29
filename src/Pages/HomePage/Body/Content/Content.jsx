@@ -33,16 +33,22 @@ const Content = () => {
   const [active, setActive] = useState("cafe");
   const [products, setProducts] = useState([]);
   const [visible, setVisible] = useState(20);
-  const loadmore = () => {
-    setVisible((prev) => prev + 10);
-  };
+  // const loadmore = () => {
+  //   setVisible((prev) => {
+  //     if (prev >= 20) {
+  //       prev = prev + 10;
+  //     } else if (prev >= products.length){
+  //       prev = 20;
+  //     }
+  //     return prev;
+  //   });
+  // };
   useEffect(() => {
     fetch("https://json-server-yodyshop.herokuapp.com/data", {
       method: "get",
     })
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data);
         setProducts(data);
       })
       .catch((error) => {
@@ -89,9 +95,17 @@ const Content = () => {
               );
             })}
           </div>
-          <div onClick={() => loadmore()} className="more">
-            Xem thêm
+          {visible < products.length ? (
+            <div className="more" onClick={()=> {setVisible (visible + 10)}}>
+              {/* {visible < products.length ? "Xem thêm" : "Thu gọn"} */}
+              Xem thêm
+            </div>
+          ) : (
+            <div className="more" onClick={()=> {setVisible(20)}}>
+            {/* {visible < products.length ? "Xem thêm" : "Thu gọn"} */}
+            Thu gọn
           </div>
+          )}
         </div>
       </div>
     </div>

@@ -7,9 +7,11 @@ import { Link } from "react-router-dom";
 const list = [
   {
     name: "xuân hè 2022",
+    link: "/xuan-he",
   },
   {
     name: "nữ",
+    link: "/nu",
     key_mobile: "1",
     list: [
       {
@@ -76,6 +78,7 @@ const list = [
   },
   {
     name: "nam",
+    link: "/nam",
     key_mobile: "2",
     list: [
       {
@@ -124,6 +127,7 @@ const list = [
   },
   {
     name: "trẻ em",
+    link: "/tre-em",
     key_mobile: "3",
     list: [
       {
@@ -159,12 +163,15 @@ const list = [
   },
   {
     name: "polo yody",
+    link: "#",
   },
   {
     name: "bộ sưu tập",
+    link: "#",
   },
   {
     name: "yody love",
+    link: "#",
     list: [
       {
         title: "TIN TỨC",
@@ -207,6 +214,7 @@ const list = [
   },
   {
     name: "đồng phục",
+    link: "#",
   },
 ];
 
@@ -216,15 +224,15 @@ const Navbar = () => {
       <div className="container wrapper-container">
         <div className="navbar-header">
           <a className="logo" href="/">
-            <img src="	https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/logo.svg?1650423295558" />
+            <img src="https://bizweb.sapocdn.net/100/438/408/themes/862334/assets/logo.svg?1653467688796" />
           </a>
           <ul className="nav-list">
             {list.map((item) => {
               return (
                 <li className="nav-item" key={item.name}>
-                  <a className="item-href" href="#">
+                  <Link className="item-href" to={item?.link}>
                     {item.name}
-                  </a>
+                  </Link>
                   {item.list && (
                     <NavMenuDrop
                       list={item.list}

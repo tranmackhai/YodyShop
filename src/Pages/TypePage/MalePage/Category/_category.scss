@@ -1,0 +1,27 @@
+@import "../../../../Styles/variable";
+@import "../../../../Styles/responsive";
+
+.category {
+  .category-content {
+    .list-category {
+      .category-img {
+        border: 1px solid #dde1ef;
+        padding: 24px 24px;
+        margin: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .category-name {
+          color: $black;
+          text-transform: capitalize;
+          font-size: 1.6rem;
+          margin-left: 8px;
+        }
+      }
+    }
+    .col-lg-2-5 {
+      max-width: 20%;
+      flex-basis: 20%;
+    }
+  }
+}

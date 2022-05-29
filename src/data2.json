@@ -1,0 +1,241 @@
+{
+  "id": 35,
+  "name": "Áo T-Shirt Trẻ Em In Hình Cánh Bướm",
+  "price": 169000,
+  "description": "<p>Chất liệu Cotton</p>\n<p>Vải mềm mại, bền bỉ, an to&agrave;n với l&agrave;n da b&eacute;</p>\n<p>Thấm h&uacute;t mồ h&ocirc;i cực tốt, tho&aacute;ng m&aacute;t rất th&iacute;ch hợp với thời tiết n&oacute;ng ẩm của Việt Nam</p>\n<p>Kiểu d&aacute;ng su&ocirc;ng rộng&nbsp;ph&ugrave; hợp mọi v&oacute;c d&aacute;ng</p>\n<p>Form d&aacute;ng su&ocirc;ng&nbsp;tạo sự thoải m&aacute;i cử động cho người mặc</p>\n<p>H&igrave;nh in ph&iacute;a trước tạo nền vẻ đ&aacute;ng y&ecirc;u cho b&eacute;</p>",
+  "slug": "ao-t-shirt-tre-em-in-hinh-canh-buom",
+  "createdAt": "2022-05-21T08:07:45.000Z",
+  "updatedAt": "2022-05-21T08:07:45.000Z",
+  "category": {
+    "id": 7,
+    "name": "Áo thun trẻ em",
+    "code": "ATC",
+    "slug": "ao-thun-tre-em",
+    "group_category": {
+      "id": 7,
+      "name": "Áo trẻ em",
+      "slug": "ao-tre-em",
+      "gender": {
+        "id": 11,
+        "name": "Trẻ em",
+        "slug": "tre-em"
+      }
+    }
+  },
+  "discounts": [
+    {
+      "id": 2,
+      "percent": 10,
+      "finish": "2022-06-01T00:00:00.000Z",
+      "product_id": 35,
+      "new_price": 152000,
+      "createdAt": "2022-05-22T08:45:53.000Z",
+      "updatedAt": "2022-05-22T08:45:53.000Z"
+    }
+  ],
+  "colors": [
+    {
+      "id": 6,
+      "value": "Hồng",
+      "code": "HOG",
+      "sizes": [
+        {
+          "id": 10,
+          "value": "2",
+          "code": "2",
+          "amount": 0,
+          "sku": "ATC0035-HOG-2",
+          "detail_id": 260
+        },
+        {
+          "id": 11,
+          "value": "4",
+          "code": "4",
+          "amount": 1,
+          "sku": "ATC0035-HOG-4",
+          "detail_id": 261
+        },
+        {
+          "id": 12,
+          "value": "6",
+          "code": "6",
+          "amount": 0,
+          "sku": "ATC0035-HOG-6",
+          "detail_id": 262
+        },
+        {
+          "id": 13,
+          "value": "8",
+          "code": "8",
+          "amount": 2,
+          "sku": "ATC0035-HOG-8",
+          "detail_id": 263
+        }
+      ],
+      "images": [
+        {
+          "id": 148,
+          "product_id": 35,
+          "color_id": 6,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120469/ufijmysa0oamiay9gs2h.jpg",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        },
+        {
+          "id": 149,
+          "product_id": 35,
+          "color_id": 6,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120469/f2bsdgqlhqgi0tn98t6c.jpg",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        },
+        {
+          "id": 150,
+          "product_id": 35,
+          "color_id": 6,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120469/qnnyg0y0mk7gbni47smo.webp",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "value": "Da người",
+      "code": "DNG",
+      "sizes": [
+        {
+          "id": 10,
+          "value": "2",
+          "code": "2",
+          "amount": 2,
+          "sku": "ATC0035-DNG-2",
+          "detail_id": 264
+        },
+        {
+          "id": 11,
+          "value": "4",
+          "code": "4",
+          "amount": 2,
+          "sku": "ATC0035-DNG-4",
+          "detail_id": 265
+        },
+        {
+          "id": 12,
+          "value": "6",
+          "code": "6",
+          "amount": 2,
+          "sku": "ATC0035-DNG-6",
+          "detail_id": 266
+        },
+        {
+          "id": 13,
+          "value": "8",
+          "code": "8",
+          "amount": 1,
+          "sku": "ATC0035-DNG-8",
+          "detail_id": 267
+        }
+      ],
+      "images": [
+        {
+          "id": 151,
+          "product_id": 35,
+          "color_id": 15,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120468/s7izmt4dh5ycqbz2axiz.webp",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        },
+        {
+          "id": 152,
+          "product_id": 35,
+          "color_id": 15,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120468/ositqhyyqnu07dmodlpw.webp",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        },
+        {
+          "id": 153,
+          "product_id": 35,
+          "color_id": 15,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120469/yachnye4jsf1t6novszc.webp",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        },
+        {
+          "id": 154,
+          "product_id": 35,
+          "color_id": 15,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120469/easxx88zepussrgsgobq.jpg",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "value": "Trắng",
+      "code": "TRG",
+      "sizes": [
+        {
+          "id": 10,
+          "value": "2",
+          "code": "2",
+          "amount": 2,
+          "sku": "ATC0035-TRG-2",
+          "detail_id": 268
+        },
+        {
+          "id": 11,
+          "value": "4",
+          "code": "4",
+          "amount": 2,
+          "sku": "ATC0035-TRG-4",
+          "detail_id": 269
+        },
+        {
+          "id": 12,
+          "value": "6",
+          "code": "6",
+          "amount": 2,
+          "sku": "ATC0035-TRG-6",
+          "detail_id": 270
+        },
+        {
+          "id": 13,
+          "value": "8",
+          "code": "8",
+          "amount": 2,
+          "sku": "ATC0035-TRG-8",
+          "detail_id": 271
+        }
+      ],
+      "images": [
+        {
+          "id": 155,
+          "product_id": 35,
+          "color_id": 1,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120469/pu7jv5nlrhl6kcbuzucc.webp",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        },
+        {
+          "id": 156,
+          "product_id": 35,
+          "color_id": 1,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120468/fhzjlubwu7endeodta0s.webp",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        },
+        {
+          "id": 157,
+          "product_id": 35,
+          "color_id": 1,
+          "url": "https://res.cloudinary.com/dwhjftwvw/image/upload/v1653120469/jbayglkawia7q94t69t3.webp",
+          "createdAt": "2022-05-21T08:07:48.000Z",
+          "updatedAt": "2022-05-21T08:07:48.000Z"
+        }
+      ]
+    }
+  ]
+}

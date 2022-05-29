@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./_recentlyviewed.scss";
 import "../LikeProduct/_like.scss";
 import { Link } from "react-router-dom";
-import "../../../../Components/Body/ProductContent/_productcontent.scss";
+import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
 import { castToVND } from "../../../../Utils";
 import data from "../../../../data.json";
 
