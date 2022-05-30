@@ -21,7 +21,10 @@ const StyleBanner = ({ style }) => {
               <div className="row">
                 {style[1].block2.map((item, index) => {
                   return (
-                    <div className="col-lg-6 py-3 px-3" key={index}>
+                    <div
+                      className={`${style[1].block2.length < 4 ? "" : "col-lg-6"} p-3`}
+                      key={index}
+                    >
                       <Link to="">
                         <img className="w-100" src={item.img} alt="" />
                       </Link>

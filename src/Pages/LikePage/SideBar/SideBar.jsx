@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import IconUser from "../../../Assets/Avatar/account_ava.webp";
 import "./_sidebar.scss";
 
 const SideBar = ({ list_item, active, setActive }) => {
@@ -7,7 +8,7 @@ const SideBar = ({ list_item, active, setActive }) => {
     <div className="block-like-account col-lg-3">
       <div className="info">
         <img
-          src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/account_ava.jpg?1652508014603"
+          src={IconUser}
           alt=""
         />
         <div className="account">

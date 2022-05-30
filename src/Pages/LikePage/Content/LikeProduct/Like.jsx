@@ -4,6 +4,7 @@ import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
 import { castToVND } from "../../../../Utils";
 import data from "../../../../data.json";
 import { Link } from "react-router-dom";
+import no_like from "../../../../Assets/Avatar/no-heart.webp";
 
 const Like = () => {
   const [visible, setVisible] = useState(16);
@@ -37,7 +38,7 @@ const Like = () => {
         </div>
         <div className="body-content">
           <img
-            src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/no-heart.png"
+            src= {no_like}
             alt=""
           />
           <span>Danh sách yêu thích của bạn trống</span>
@@ -50,7 +51,6 @@ const Like = () => {
         <h1>CÓ THỂ BẠN MUỐN MUA</h1>
         <div className="row">
           {data.slice(0, visible).map((item) => {
-            // console.log(item);
             return (
               <div
                 key={item.id}

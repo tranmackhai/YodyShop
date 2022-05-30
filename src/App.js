@@ -1,18 +1,15 @@
 import HomePage from "./Pages/HomePage/HomePage";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import {BrowserRouter, Routes, Route,} 
+from "react-router-dom";
 import Cart from "./Pages/Cart/Cart";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Like from "./Pages/LikePage/Content/LikeProduct/Like";
-import DefaultLayout from "./Pages/DefaultLayout";
-import LikeLayout from "./Pages/LikePage/LikeLayout/LikeLayout";
-import MalePage from "./Pages/TypePage/MalePage/MalePage";
+import DefaultLayout from "./Layouts/DefaultLayout";
 import RecentlyViewed from "./Pages/LikePage/Content/RecententlyViewed/RecentlyViewed";
-import TypeLayout from "./Pages/TypePage/Layout/TypeLayout";
+import TypeLayout from "./Layouts/TypeLayout";
+import SwitchPage from "./Pages/TypePage/SwitchPage/SwitchPage";
+import LikeLayout from "./Layouts/LikeLayout/LikeLayout";
 
 function App() {
   return (
@@ -24,7 +21,7 @@ function App() {
         <Route path="/recently-viewed" element={<LikeLayout><RecentlyViewed /></LikeLayout>} />
         <Route path="/login" element={<DefaultLayout><Login /></DefaultLayout>} />
         <Route path="/register" element={<DefaultLayout><Register /></DefaultLayout>} />
-        <Route path="/nu" element = {<TypeLayout><MalePage /></TypeLayout>} />
+        <Route path="/:slug" element={<TypeLayout><SwitchPage /></TypeLayout>} />
       </Routes>
     </BrowserRouter>
   );

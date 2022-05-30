@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
 import { castToVND } from "../../../../Utils";
 import data from "../../../../data.json";
+import no_viewed from "../../../../Assets/Avatar/no-viewed.webp";
+
 
 const RecentlyViewed = () => {
   const [visible, setVisible] = useState(16);
@@ -30,7 +32,7 @@ const RecentlyViewed = () => {
         </div>
         <div className="body-content">
           <img
-            src="https://bizweb.sapocdn.net/100/438/408/themes/862041/assets/no-viewed.png"
+            src={no_viewed}
             alt=""
           />
           <span>Bạn chưa xem sản phẩm nào</span>

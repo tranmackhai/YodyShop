@@ -142,6 +142,257 @@
     ]
   },
   {
-    "type": "nam"
+    "type": "nam",
+    "banner": [
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_slider_1.jpg?1653897588407"
+      }
+    ],
+    "category": [
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_1.svg?1653897588407",
+        "name": "Áo Polo"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_2.svg?1653897588407",
+        "name": "Áo Thun"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_3.svg?1653897588407",
+        "name": "quần âu"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_4.svg?1653897588407",
+        "name": "Áo sơ mi"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_5.svg?1653897588407",
+        "name": "quần jean"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_6.svg?1653897588407",
+        "name": "đồ lót"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_7.svg?1653897588407",
+        "name": "Quần kaki"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_cate_icon_8.svg?1653897588407",
+        "name": "phụ kiện"
+      }
+    ],
+    "style": [
+      {
+        "block1": [
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_banner_1.jpg?1653897588407"
+          }
+        ]
+      },
+      {
+        "block2": [
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_banner_2.jpg?1653897588407"
+          },
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_banner_3.jpg?1653897588407"
+          },
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_banner_4.jpg?1653897588407"
+          },
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863079/assets/page_nam_banner_5.jpg?1653897588407"
+          }
+        ]
+      }
+    ],
+    "propose": [
+      {
+        "name": "Bán Chạy Nhất"
+      },
+      {
+        "name": "Hàng Mới Về"
+      },
+      {
+        "name": "Áo"
+      },
+      {
+        "name": "Quần"
+      },
+      {
+        "name": "bộ đồ nam"
+      },
+      {
+        "name": "đồ mặc trong"
+      },
+      {
+        "name": "phụ kiện"
+      }
+    ],
+    "blog": [
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/do-2hand-yodyvn.jpg?v=1653404230427",
+        "title": "Đồ 2hand - Những fact thú vị không phải ai cũng biết",
+        "description": "Giới trẻ hiện nay đang có xu hướng mua và sử dụng những đồ 2hand. Vậy đồ secondhand là gì? Điều gì khiến các bạn trẻ ưa chuộng các món đồ đã qua sử dụng đến vậy? Hãy cùng YODY tìm hiểu nhé!",
+        "icon": "fa-solid fa-clock",
+        "time": "25/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/giay-2-hand-yodyvn.jpg?v=1653645533687",
+        "title": "Giày secondhand có chính hãng không? 3 lưu ý khi mua giày 2hand",
+        "description": "Khi nhắc đến mua sắm đồ cũ, chắc chắn sẽ có một thị trường dành riêng cho giày 2hand. Tuy nhiên, nhiều người vẫn chưa có nhiều kinh nghiệm trong việc “săn” giày secondhand. Đừng lo, YODY sẽ mách bạn bí kíp mua giày đã qua sử dụng chuẩn không phải chỉnh trong bài viết dưới đây.",
+        "icon": "fa-solid fa-clock",
+        "time": "24/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/mau-be-phoi-voi-mau-gi-yodyvn21.jpg?v=1653270050663",
+        "title": "Màu be phối với màu gì? Giải mã cách mix đồ “chất lừ”, chuẩn vintage",
+        "description": "Gam màu be được sử dụng rất nhiều trong lĩnh vực thời trang cũng như trong cuộc sống thường ngày như trang trí nội thất, phương tiện đi lại, trang phục. Nhưng không phải ai cũng biết cách phối màu be sao cho vừa hài hoà vừa nổi bật. Trong bài viết này, YODY sẽ giải đáp câu hỏi “màu be phối với màu gì?” của các bạn.",
+        "icon": "fa-solid fa-clock",
+        "time": "23/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-bo-ong-rong.jpg?v=1653138713263",
+        "title": "Quần bò ống rộng mặc với áo gì để tôn dáng nhất?",
+        "description": "Quần bò ống rộng mặc với áo gì để giúp nàng che đi khuyết điểm và khoe trọn vóc dáng cân đối cơ thể. Dưới đây là một số cách phối quần bò nữ để nàng thêm tự tin trong mọi hoàn cảnh.",
+        "icon": "fa-solid fa-clock",
+        "time": "22/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/chan-vay-bo-mac-voi-ao-gi-yodyvn6.jpg?v=1652867358143",
+        "title": "Chân váy bò mặc với áo gì để chuẩn thời trang, trendy hơn?",
+        "description": "Chân váy jean là trang phục trẻ trung, cá tính mà cô gái nào cũng sở hữu. Tuy nhiên, các bạn đã biết chân váy bò mặc với áo gì chuẩn thời thượng chưa? Hãy cùng YODY khám phá nhé!",
+        "icon": "fa-solid fa-clock",
+        "time": "18/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/tuoi-hoi-nen-mac-mau-gi-nam-2022-yodyvn6.jpg?v=1652779411737",
+        "title": "Tuổi Hợi nên mặc màu gì năm 2022 để tài lộc lên như “diều gặp gió”",
+        "description": "Từ xưa đến nay, việc tin vào phong thuỷ đã ăn sâu vào văn hoá người Việt nhằm tránh đi những điều xui xẻo, thu hút nhiều may mắn, tài lộc. Mỗi con giáp có một lưu ý khác nhau về phong thuỷ, màu sắc,... Vậy tuổi Hợi nên mặc màu gì năm 2022, hãy cùng YODY khám phá nhé!",
+        "icon": "fa-solid fa-clock",
+        "time": "15/05/2022"
+      }
+    ]
+  },
+  {
+    "type": "tre-em",
+    "banner": [
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_slider_2.jpg?1653901597354"
+      }
+    ],
+    "category": [
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_cate_icon_2.svg?1653901597354",
+        "name": "Áo Polo"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_cate_icon_1.svg?1653901597354",
+        "name": "Áo Thun"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_cate_icon_3.svg?1653901597354",
+        "name": "Áo sơ mi"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_cate_icon_4.svg?1653901597354",
+        "name": "quần dài"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_cate_icon_5.svg?1653901597354",
+        "name": "quần short"
+      },
+      {
+        "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_cate_icon_6.svg?1653901597354",
+        "name": "chân váy"
+      }
+    ],
+    "style": [
+      {
+        "block1": [
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_banner_1.jpg?1653901597354"
+          }
+        ]
+      },
+      {
+        "block2": [
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_banner_2.jpg?1653901597354"
+          },
+          {
+            "img": "https://bizweb.sapocdn.net/100/438/408/themes/863105/assets/page_treem_banner_3.jpg?1653901597354"
+          }
+        ]
+      }
+    ],
+    "propose": [
+      {
+        "name": "Bán Chạy Nhất"
+      },
+      {
+        "name": "Hàng Mới Về"
+      },
+      {
+        "name": "Áo"
+      },
+      {
+        "name": "Quần"
+      },
+      {
+        "name": "bộ đồ"
+      },
+      {
+        "name": "váy đầm"
+      },
+      {
+        "name": "phụ kiện"
+      }
+    ],
+    "blog": [
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/do-2hand-yodyvn.jpg?v=1653404230427",
+        "title": "Đồ 2hand - Những fact thú vị không phải ai cũng biết",
+        "description": "Giới trẻ hiện nay đang có xu hướng mua và sử dụng những đồ 2hand. Vậy đồ secondhand là gì? Điều gì khiến các bạn trẻ ưa chuộng các món đồ đã qua sử dụng đến vậy? Hãy cùng YODY tìm hiểu nhé!",
+        "icon": "fa-solid fa-clock",
+        "time": "25/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/giay-2-hand-yodyvn.jpg?v=1653645533687",
+        "title": "Giày secondhand có chính hãng không? 3 lưu ý khi mua giày 2hand",
+        "description": "Khi nhắc đến mua sắm đồ cũ, chắc chắn sẽ có một thị trường dành riêng cho giày 2hand. Tuy nhiên, nhiều người vẫn chưa có nhiều kinh nghiệm trong việc “săn” giày secondhand. Đừng lo, YODY sẽ mách bạn bí kíp mua giày đã qua sử dụng chuẩn không phải chỉnh trong bài viết dưới đây.",
+        "icon": "fa-solid fa-clock",
+        "time": "24/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/mau-be-phoi-voi-mau-gi-yodyvn21.jpg?v=1653270050663",
+        "title": "Màu be phối với màu gì? Giải mã cách mix đồ “chất lừ”, chuẩn vintage",
+        "description": "Gam màu be được sử dụng rất nhiều trong lĩnh vực thời trang cũng như trong cuộc sống thường ngày như trang trí nội thất, phương tiện đi lại, trang phục. Nhưng không phải ai cũng biết cách phối màu be sao cho vừa hài hoà vừa nổi bật. Trong bài viết này, YODY sẽ giải đáp câu hỏi “màu be phối với màu gì?” của các bạn.",
+        "icon": "fa-solid fa-clock",
+        "time": "23/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/quan-bo-ong-rong.jpg?v=1653138713263",
+        "title": "Quần bò ống rộng mặc với áo gì để tôn dáng nhất?",
+        "description": "Quần bò ống rộng mặc với áo gì để giúp nàng che đi khuyết điểm và khoe trọn vóc dáng cân đối cơ thể. Dưới đây là một số cách phối quần bò nữ để nàng thêm tự tin trong mọi hoàn cảnh.",
+        "icon": "fa-solid fa-clock",
+        "time": "22/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/chan-vay-bo-mac-voi-ao-gi-yodyvn6.jpg?v=1652867358143",
+        "title": "Chân váy bò mặc với áo gì để chuẩn thời trang, trendy hơn?",
+        "description": "Chân váy jean là trang phục trẻ trung, cá tính mà cô gái nào cũng sở hữu. Tuy nhiên, các bạn đã biết chân váy bò mặc với áo gì chuẩn thời thượng chưa? Hãy cùng YODY khám phá nhé!",
+        "icon": "fa-solid fa-clock",
+        "time": "18/05/2022"
+      },
+      {
+        "image": "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/tuoi-hoi-nen-mac-mau-gi-nam-2022-yodyvn6.jpg?v=1652779411737",
+        "title": "Tuổi Hợi nên mặc màu gì năm 2022 để tài lộc lên như “diều gặp gió”",
+        "description": "Từ xưa đến nay, việc tin vào phong thuỷ đã ăn sâu vào văn hoá người Việt nhằm tránh đi những điều xui xẻo, thu hút nhiều may mắn, tài lộc. Mỗi con giáp có một lưu ý khác nhau về phong thuỷ, màu sắc,... Vậy tuổi Hợi nên mặc màu gì năm 2022, hãy cùng YODY khám phá nhé!",
+        "icon": "fa-solid fa-clock",
+        "time": "15/05/2022"
+      }
+    ]
   }
 ]

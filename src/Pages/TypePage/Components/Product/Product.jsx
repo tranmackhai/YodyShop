@@ -4,7 +4,7 @@ import "./_product.scss";
 import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
 import { Link } from "react-router-dom";
 
-const Product = ({ propose }) => {
+const Product = ({ propose, type }) => {
   const [active, setActive] = useState(propose[0]);
   const [products, setProducts] = useState([]);
   const [visible, setVisible] = useState(10);
@@ -35,15 +35,14 @@ const Product = ({ propose }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data);
-        const result = data.filter((product) => product.type === "nu");
+        const result = data.filter((product) => product.type === type);
         setProducts(result);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, []);
-  console.log(products);
+  }, [type]);
+  // console.log(products);
   return (
     <div className="product">
       <div className="container">
