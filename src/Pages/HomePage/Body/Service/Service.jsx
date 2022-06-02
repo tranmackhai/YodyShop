@@ -1,27 +1,31 @@
 import React from "react";
 import "./_service.scss";
+import service_1 from "../../../../Assets/Avatar/ser_1.webp"
+import service_2 from "../../../../Assets/Avatar/ser_2.webp"
+import service_3 from "../../../../Assets/Avatar/ser_3.webp"
+import service_4 from "../../../../Assets/Avatar/ser_4.webp"
 
 const services = [
   {
-    img: "https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/ser_1.png?1650597781514",
+    img: service_1,
     title: "Miễn phí giao hàng",
     subtitle: "FREESHIP mọi đơn từ ",
     subtitlelight: ">498k",
   },
   {
-    img: "https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/ser_2.png?1650597781514",
+    img: service_2,
     title: "Thanh toán COD",
     subtitle: "Thanh toán khi",
     subtitlelight: " nhận hàng (COD)",
   },
   {
-    img: "https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/ser_3.png?1650597781514",
+    img: service_3,
     title: "Khách hàng VIP",
     subtitle: "Ưu đãi cho",
     subtitlelight: " khách hàng VIP",
   },
   {
-    img: "https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/ser_4.png?1650597781514",
+    img: service_4,
     title: "Hỗ trợ bảo hành",
     subtitle: "đồ tại tất cả YODY store",
     subtitlelight_left: "Đổi sửa ",

@@ -5,6 +5,11 @@ import { Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import banner_1 from "../../../../Assets/Banner/b1.webp";
+import banner_2 from "../../../../Assets/Banner/b2.webp";
+import banner_3 from "../../../../Assets/Banner/b3.webp";
+import banner_4 from "../../../../Assets/Banner/b5.webp";
+
 const SectionBanner = () => {
   return (
     <section className="section-banner">
@@ -15,7 +20,7 @@ const SectionBanner = () => {
         <div className="img-effect">
           <a href="">
             <img
-              src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/b1.jpg?1650705926266"
+              src={banner_1}
               alt=""
             />
           </a>
@@ -23,7 +28,7 @@ const SectionBanner = () => {
         <div className="img-effect">
           <a href="">
             <img
-              src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/b2.jpg?1650705926266"
+              src={banner_2}
               alt=""
             />
           </a>
@@ -42,7 +47,7 @@ const SectionBanner = () => {
               <div className="img-effect">
                 <a href="#">
                   <img
-                    src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/b3.jpg?1650705926266"
+                    src={banner_3}
                     alt=""
                   />
                 </a>
@@ -52,7 +57,7 @@ const SectionBanner = () => {
               <div className="img-effect">
                 <a href="#">
                   <img
-                    src="https://bizweb.sapocdn.net/100/438/408/themes/862083/assets/b5.jpg?1653109115901"
+                    src= {banner_4}
                     alt=""
                   />
                 </a>

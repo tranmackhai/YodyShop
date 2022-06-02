@@ -3,6 +3,9 @@ import "./_navbar.scss";
 import "../NavMenuDrop/_navmenudrop.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
 import { Link } from "react-router-dom";
+import user from "../../../Assets/Icon/user.svg"
+import cart from "../../../Assets/Icon/cart.svg"
+import heart from "../../../Assets/Icon/heart.svg"
 
 const list = [
   {
@@ -259,7 +262,7 @@ const Navbar = () => {
             <div className="user">
               <Link to="/login">
                 <img
-                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/user.svg?1650423295558"
+                  src= {user}
                   alt=""
                 />
               </Link>
@@ -275,7 +278,7 @@ const Navbar = () => {
             <div className="like">
               <Link to="/like">
                 <img
-                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/heart.svg?1650423295558"
+                  src={heart}
                   alt=""
                 />
                 <span className="message-box">Sản phẩm yêu thích</span>
@@ -284,7 +287,7 @@ const Navbar = () => {
             <div className="cart">
               <Link to="/cart">
                 <img
-                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/cart.svg?1650423295558"
+                  src={cart}
                   alt=""
                 />
               </Link>

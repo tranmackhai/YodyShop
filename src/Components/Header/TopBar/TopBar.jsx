@@ -1,5 +1,6 @@
 import React from "react";
 import "./_topbar.scss";
+import icfree from "../../../Assets/Avatar/free_tb.webp";
 
 const TopBar = () => {
   return (
@@ -18,10 +19,7 @@ const TopBar = () => {
           <a className="hotline margin-right-12" href="tel:1800 2086">
             <i className="fa-solid fa-phone"></i>
             <b>1800 2086</b>
-            <img
-              src="//bizweb.sapocdn.net/100/438/408/themes/858544/assets/free_tb.png?1650423295558"
-              alt="free"
-            ></img>
+            <img src={icfree} alt="free" />
           </a>
           <a className="support margin-right-12" href="#">
             <i className="fa-solid fa-envelope"></i>
