@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ProductContent from "../ProductContent/ProductContent";
+import Product from "../../../../Components/Product/Product";
 import "./_content.scss";
 
 const title = [
@@ -87,10 +87,10 @@ const Content = () => {
       <div className="product-main">
         <div className="container">
           <div className="row">
-            {products.slice(0, visible).map((product) => {
+            {products.slice(0, visible).map((item) => {
               return (
-                <div key={product.id} className="col-lg-2-5 col-md-3 col-6">
-                  <ProductContent product={product} />
+                <div key={item.id} className="col-lg-2-5 col-md-3 col-6">
+                  <Product item={item} />
                 </div>
               );
             })}

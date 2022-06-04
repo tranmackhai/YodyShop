@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./_sectionproduct.scss";
-import ProductContent from "../ProductContent/ProductContent";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { Link } from "react-router-dom";
+import Product from "../../../../Components/Product/Product";
 
 const SectionProduct = () => {
   const [products, setProducts] = useState([]);
@@ -16,7 +16,7 @@ const SectionProduct = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setProducts(data);
       })
       .catch((error) => {
@@ -72,7 +72,7 @@ const SectionProduct = () => {
               {products?.slice(0, showProducts).map((product) => {
                 return (
                   <SwiperSlide key={product.id}>
-                    <ProductContent product={product} />
+                    <Product item={product} showOption = {true} />
                   </SwiperSlide>
                 );
               })}

@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./Components/Banner/Banner";
 import Category from "./Components/Category/Category";
 import StyleBanner from "./Components/StyleBanner/StyleBanner";
-import Product from "./Components/Product/Product";
+import Products from "./Components/Products/Products";
 import Blog from "./Components/Blog/Blog";
 
 const MalePage = ({ data }) => {
@@ -11,7 +11,7 @@ const MalePage = ({ data }) => {
       <Banner banner={data.banner} />
       <Category category={data.category} />
       <StyleBanner style={data.style} />
-      <Product propose={data.propose} type={data.type} />
+      <Products propose={data.propose} type={data.type} />
       <Blog blog={data.blog} />
     </div>
   );

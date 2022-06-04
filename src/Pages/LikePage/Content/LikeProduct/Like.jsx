@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./_like.scss";
-import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
-import { castToVND } from "../../../../Utils";
 import data from "../../../../data.json";
 import { Link } from "react-router-dom";
 import no_like from "../../../../Assets/Avatar/no-heart.webp";
+import Product from "../../../../Components/Product/Product";
 
 const Like = () => {
   const [visible, setVisible] = useState(16);
@@ -18,17 +17,6 @@ const Like = () => {
       return prev;
     });
   };
-  const showImages = (images) => {
-    const arr = [];
-    for (const key in images) {
-      arr.push(
-        <div key={key} className="view-color">
-          <img src={images[key]} alt="" />
-        </div>
-      );
-    }
-    return arr;
-  };
   return (
     <div className="block-content col-lg-9">
       <div className="separation-block-like">
@@ -37,10 +25,7 @@ const Like = () => {
           <span className="last-title">Sản phẩm</span>
         </div>
         <div className="body-content">
-          <img
-            src= {no_like}
-            alt=""
-          />
+          <img src={no_like} alt="" />
           <span>Danh sách yêu thích của bạn trống</span>
           <Link className="buy-now" to="#">
             Mua sắm ngay bây giờ
@@ -53,28 +38,11 @@ const Like = () => {
           {data.slice(0, visible).map((item) => {
             return (
               <div
-                key={item.id}
                 className="item-product col-lg-3"
                 style={{ paddingRight: "5px" }}
+                key={item.id}
               >
-                <a href="#">
-                  <div className="product-image">
-                    <img src={item.image} alt="" />
-                  </div>
-                  <h3 className="product-name text-align-left">{item.name}</h3>
-                </a>
-                <div className="product-price-box">
-                  <div className="price">{castToVND(item.price)}</div>
-                  <div className="price-old">{castToVND(item.priceold)}</div>
-                </div>
-                <div className="option-view">
-                  <div
-                    className="row"
-                    style={{ marginLeft: "0", marginRight: "0" }}
-                  >
-                    {showImages(item.images)}
-                  </div>
-                </div>
+                <Product item={item} />
               </div>
             );
           })}

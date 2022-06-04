@@ -2,28 +2,16 @@ import React, { useState } from "react";
 import "./_recentlyviewed.scss";
 import "../LikeProduct/_like.scss";
 import { Link } from "react-router-dom";
-import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
-import { castToVND } from "../../../../Utils";
 import data from "../../../../data.json";
 import no_viewed from "../../../../Assets/Avatar/no-viewed.webp";
-
+import Product from "../../../../Components/Product/Product";
 
 const RecentlyViewed = () => {
   const [visible, setVisible] = useState(16);
   const loadmore = () => {
     setVisible((prev) => prev + 4);
   };
-  const showImages = (images) => {
-    const arr = [];
-    for (const key in images) {
-      arr.push(
-        <div key={key} className="view-color">
-          <img src={images[key]} alt="" />
-        </div>
-      );
-    }
-    return arr;
-  };
+ 
   return (
     <div className="block-content col-lg-9">
       <div className="separation-block-like">
@@ -31,10 +19,7 @@ const RecentlyViewed = () => {
           <span className="first-title">Đã xem gần đây</span>
         </div>
         <div className="body-content">
-          <img
-            src={no_viewed}
-            alt=""
-          />
+          <img src={no_viewed} alt="" />
           <span>Bạn chưa xem sản phẩm nào</span>
           <Link className="buy-now" to="#">
             Mua sắm ngay bây giờ
@@ -48,28 +33,11 @@ const RecentlyViewed = () => {
             console.log(item);
             return (
               <div
-                key={item.id}
                 className="item-product col-lg-3"
+                key={item.id}
                 style={{ paddingRight: "5px" }}
               >
-                <a href="">
-                  <div className="product-image">
-                    <img src={item.image} alt="" />
-                  </div>
-                  <h3 className="product-name text-align-left">{item.name}</h3>
-                </a>
-                <div className="product-price-box">
-                  <div className="price">{castToVND(item.price)}</div>
-                  <div className="price-old">{castToVND(item.priceold)}</div>
-                </div>
-                <div className="option-view">
-                  <div
-                    className="row"
-                    style={{ marginLeft: "0", marginRight: "0" }}
-                  >
-                    {showImages(item.images)}
-                  </div>
-                </div>
+                <Product item={item} />
               </div>
             );
           })}

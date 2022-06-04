@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { castToVND } from "../../../../Utils";
-import "./_product.scss";
-import "../../../../Pages/HomePage/Body/ProductContent/_productcontent.scss";
+import "./_products.scss";
 import { Link } from "react-router-dom";
+import Product from "../../../../Components/Product/Product";
 
-const Product = ({ propose, type }) => {
+const Products = ({ propose, type }) => {
   const [active, setActive] = useState(propose[0]);
   const [products, setProducts] = useState([]);
   const [visible, setVisible] = useState(10);
@@ -17,17 +16,6 @@ const Product = ({ propose, type }) => {
       }
       return prev;
     });
-  };
-  const showImages = (images) => {
-    const arr = [];
-    for (const key in images) {
-      arr.push(
-        <div key={key} className="view-color">
-          <img src={images[key]} alt="" />
-        </div>
-      );
-    }
-    return arr;
   };
   useEffect(() => {
     fetch("https://json-server-yodyshop.herokuapp.com/data", {
@@ -74,29 +62,12 @@ const Product = ({ propose, type }) => {
                 key={item.id}
                 style={{ flexBasis: "20%", maxWidth: "20%", padding : "0 10px"}}
               >
-                <a href="#">
-                  <div className="product-image">
-                    <img src={item.image} alt="" />
-                  </div>
-                  <h3 className="product-name text-align-left">{item.name}</h3>
-                </a>
-                <div className="product-price-box">
-                  <div className="price">{castToVND(item.price)}</div>
-                  <div className="price-old">{castToVND(item.priceold)}</div>
-                </div>
-                <div className="option-view">
-                  <div
-                    className="row"
-                    style={{ marginLeft: "0", marginRight: "0" }}
-                  >
-                    {showImages(item.images)}
-                  </div>
-                </div>
+                <Product item = {item}/>
               </div>
             );
           })}
         </div>
-        <Link to="" className="more" onClick={()=> {loadmore()}}>
+        <Link to="#" className="more" onClick={()=> {loadmore()}}>
         {visible < products.length ? "Xem thêm" : "Thu gọn"}
         </Link>
       </div>
@@ -104,4 +75,4 @@ const Product = ({ propose, type }) => {
   );
 };
 
-export default Product;
+export default Products;
