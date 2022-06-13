@@ -27,6 +27,7 @@ const Product = ({ item, showOption }) => {
         quantity: 1,
       })
     );
+    console.log(item)
   };
   // console.log(item);
   return (

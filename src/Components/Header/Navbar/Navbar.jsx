@@ -226,9 +226,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container wrapper-container">
         <div className="navbar-header">
-          <a className="logo" href="/">
+          <Link className="logo" to="/">
             <img src="https://bizweb.sapocdn.net/100/438/408/themes/862334/assets/logo.svg?1653467688796" />
-          </a>
+          </Link>
           <ul className="nav-list">
             {list.map((item) => {
               return (

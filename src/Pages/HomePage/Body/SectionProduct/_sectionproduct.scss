@@ -57,14 +57,14 @@
           display: none;
         }
         background-size: contain;
-        background-image: url("https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/next_bst.svg");
+        background-image: url("../../../../Assets/Icon/next_bst.svg");
       }
       .swiper-button-prev {
         &::after {
           display: none;
         }
         background-size: contain;
-        background-image: url("https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/prev_bst.svg");
+        background-image: url("../../../../Assets/Icon/prev_bst.svg");
       }
       .swiper-slide{
         margin-right: 20px !important;
