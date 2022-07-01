@@ -3,9 +3,13 @@ import "./_navbar.scss";
 import "../NavMenuDrop/_navmenudrop.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
 import { Link } from "react-router-dom";
-import user from "../../../Assets/Icon/user.svg"
-import cart from "../../../Assets/Icon/cart.svg"
-import heart from "../../../Assets/Icon/heart.svg"
+import user from "../../../Assets/Icon/user.svg";
+import cart from "../../../Assets/Icon/cart.svg";
+import heart from "../../../Assets/Icon/heart.svg";
+import img_nu from "../../../Assets/Img/link_image_2_1.webp";
+import img_nam from "../../../Assets/Img/link_image_3_1.webp";
+import img_tre_em from "../../../Assets/Img/link_image_4_1.webp";
+import img_yd_love from "../../../Assets/Img/link_image_7_1.webp";
 
 const list = [
   {
@@ -76,8 +80,7 @@ const list = [
         ],
       },
     ],
-    imgright:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/themes/858544/assets/link_image_2_1.jpg?1650423295558",
+    imgright: img_nu ,
   },
   {
     name: "nam",
@@ -123,10 +126,8 @@ const list = [
         ],
       },
     ],
-    imgleft:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/themes/858544/assets/link_image_3_1.jpg?1650423295558",
-    imgright:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/themes/858544/assets/link_image_3_2.jpg?1650423295558",
+    imgleft:  img_nam ,
+    imgright: ""
   },
   {
     name: "trẻ em",
@@ -159,10 +160,8 @@ const list = [
         items: [{ title: "Phụ kiện khác" }],
       },
     ],
-    imgleft:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/themes/858544/assets/link_image_4_1.jpg?1650423295558",
-    imgright:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/themes/858544/assets/link_image_4_2.jpg?1650423295558",
+    imgleft: img_tre_em ,
+    imgright:""
   },
   {
     name: "polo yody",
@@ -212,8 +211,7 @@ const list = [
         ],
       },
     ],
-    imgright:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/themes/858544/assets/link_image_7_1.jpg?1650597781514",
+    imgright: img_yd_love,
   },
   {
     name: "đồng phục",
@@ -261,10 +259,7 @@ const Navbar = () => {
           <div className="header-tool">
             <div className="user">
               <Link to="/login">
-                <img
-                  src= {user}
-                  alt=""
-                />
+                <img src={user} alt="" />
               </Link>
               <ul className="account-header">
                 <li>
@@ -277,19 +272,13 @@ const Navbar = () => {
             </div>
             <div className="like">
               <Link to="/like">
-                <img
-                  src={heart}
-                  alt=""
-                />
+                <img src={heart} alt="" />
                 <span className="message-box">Sản phẩm yêu thích</span>
               </Link>
             </div>
             <div className="cart">
               <Link to="/cart">
-                <img
-                  src={cart}
-                  alt=""
-                />
+                <img src={cart} alt="" />
               </Link>
               <div className="cart-drop">
                 <div className="cart-container">

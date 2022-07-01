@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import map from "../../Assets/Icon/map.svg";
+import phone from "../../Assets/Icon/phone.svg";
+import email from "../../Assets/Icon/email.svg";
+import logo_btc from "../../Assets/Avatar/logo_bct.webp";
+import logo_footer from "../../Assets/Avatar/logo_footer.webp"
 import "./_footer.scss";
 
 const Footer = () => {
@@ -50,7 +55,7 @@ const Footer = () => {
             <div className="logo-footer-mobile">
               <Link to="/">
                 <img
-                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/logo_footer.png?1652325127725"
+                  src={logo_footer}
                   alt=""
                 />
               </Link>
@@ -265,7 +270,7 @@ const Footer = () => {
             <ul className="menu">
               <li className="menu-item last-text">
                 <img
-                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/map.svg?1650954863867"
+                  src={map}
                   alt=""
                 />
                 <p>
@@ -277,7 +282,7 @@ const Footer = () => {
               </li>
               <li className="menu-item last-text">
                 <img
-                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/phone.svg?1650954863867"
+                  src={phone}
                   alt=""
                 />
                 <div className="block-text">
@@ -288,7 +293,7 @@ const Footer = () => {
               </li>
               <li className="menu-item last-text">
                 <img
-                  src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/email.svg?1650954863867"
+                  src={email}
                   alt=""
                 />
                 <a href="tranmackhai@gmail.com">
@@ -297,7 +302,7 @@ const Footer = () => {
               </li>
             </ul>
             <img
-              src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/logo_bct.png?1650954863867"
+              src={logo_btc}
               alt=""
             />
           </div>

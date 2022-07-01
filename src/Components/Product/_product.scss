@@ -1,26 +1,30 @@
 @import "../../Styles/variable";
 @import "../../Styles/responsive";
 
-.product-image {
-  overflow: hidden;
-  border: 0.8px solid rgb(243, 237, 237);
+.wrap-image {
   position: relative;
-  &:hover {
-    img:first-child {
-      transform: scale(1.1);
-    }
-  }
-  img:first-child {
-    width: 100%;
-    object-fit: cover;
-    transition: linear 0.3s;
-  }
   .btn-add-to-cart {
     position: absolute;
     right: 0;
     bottom: 0;
     width: 34px;
     height: 34px;
+    cursor: pointer;
+  }
+  .product-image {
+    overflow: hidden;
+    border: 0.8px solid rgb(243, 237, 237);
+    position: relative;
+    &:hover {
+      img:first-child {
+        transform: scale(1.1);
+      }
+    }
+    img:first-child {
+      width: 100%;
+      object-fit: cover;
+      transition: linear 0.3s;
+    }
   }
 }
 .product-name {

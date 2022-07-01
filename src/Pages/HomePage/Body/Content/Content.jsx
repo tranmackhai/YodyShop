@@ -33,6 +33,7 @@ const Content = () => {
   const [active, setActive] = useState("cafe");
   const [products, setProducts] = useState([]);
   const [visible, setVisible] = useState(20);
+  const [filterProducts, setFilterProducts] = useState([]);
   // const loadmore = () => {
   //   setVisible((prev) => {
   //     if (prev >= 20) {
@@ -55,6 +56,13 @@ const Content = () => {
         console.log(error);
       });
   }, []);
+  useEffect(() => {
+    setFilterProducts(
+      [...products].filter((item) =>
+        item.name.toLowerCase().includes(active.toLowerCase())
+      )
+    );
+  }, [active, products]);
 
   return (
     <div className="Content">
@@ -69,7 +77,9 @@ const Content = () => {
                 return (
                   <li
                     key={title.name}
-                    onClick={() => setActive(title.name)}
+                    onClick={() => {
+                      setActive(title.name);
+                    }}
                     className={
                       active === title.name
                         ? "list-title-item item-active"
@@ -87,25 +97,45 @@ const Content = () => {
       <div className="product-main">
         <div className="container">
           <div className="row">
-            {products.slice(0, visible).map((item) => {
-              return (
-                <div key={item.id} className="col-lg-2-5 col-md-3 col-6">
-                  <Product item={item} />
-                </div>
-              );
-            })}
+            {(filterProducts.length > 0 ? filterProducts : products)
+              .slice(0, visible)
+              .map((item) => {
+                return (
+                  <div key={item.id} className="col-lg-2-5 col-md-3 col-6">
+                    <Product item={item} />
+                  </div>
+                );
+              })}
           </div>
-          {visible < products.length ? (
-            <div className="more" onClick={()=> {setVisible (visible + 10)}}>
+          {visible <
+            (filterProducts.length > 0
+              ? filterProducts.length
+              : products.length) && (
+            <div
+              className="more"
+              onClick={() => {
+                setVisible(visible + 10);
+              }}
+            >
               {/* {visible < products.length ? "Xem thêm" : "Thu gọn"} */}
               Xem thêm
             </div>
-          ) : (
-            <div className="more" onClick={()=> {setVisible(20)}}>
-            {/* {visible < products.length ? "Xem thêm" : "Thu gọn"} */}
-            Thu gọn
-          </div>
           )}
+          {visible > 20 &&
+            visible >=
+              (filterProducts.length > 0
+                ? filterProducts.length
+                : products.length) && (
+              <div
+                className="more"
+                onClick={() => {
+                  setVisible(20);
+                }}
+              >
+                {/* {visible < products.length ? "Xem thêm" : "Thu gọn"} */}
+                Thu gọn
+              </div>
+            )}
         </div>
       </div>
     </div>

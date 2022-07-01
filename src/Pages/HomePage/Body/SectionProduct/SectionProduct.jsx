@@ -6,6 +6,8 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { Link } from "react-router-dom";
 import Product from "../../../../Components/Product/Product";
+import logo_everyday from "../../../../Assets/Banner/banner_hangngay_1.webp"
+import right_icon from "../../../../Assets/Icon/right_color.svg"
 
 const SectionProduct = () => {
   const [products, setProducts] = useState([]);
@@ -33,7 +35,7 @@ const SectionProduct = () => {
         <div className="section-image">
           <a href="">
             <img
-              src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/banner_hangngay_1.jpg?1650597781514"
+              src={logo_everyday}
               alt=""
             />
           </a>
@@ -78,7 +80,7 @@ const SectionProduct = () => {
               })}
               <SwiperSlide className="swiper-slide">
                 <Link className="swiper-end" to="/bts-xuan-he">Xem tất cả
-                <img src="https://bizweb.sapocdn.net/100/438/408/themes/862083/assets/right_color.svg" alt="" /></Link>
+                <img src={right_icon} alt="" /></Link>
               </SwiperSlide>
             </Swiper>
           </>

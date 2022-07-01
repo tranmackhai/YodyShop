@@ -11,7 +11,8 @@ const cartSlice = createSlice({
     },
     addToCart: (state, action) => {
       const cartItem = action.payload;
-      const index = state.cart.items.findIndex(item => item.id === cartItem.id);
+      const index = state.cart.items.findIndex(item => item.id === cartItem.id &&
+        item.color.value === cartItem.color.value && item.size === cartItem.size);
       if (index !== -1) {
         state.cart.items[index].quantity += cartItem.quantity;
       }
@@ -23,7 +24,8 @@ const cartSlice = createSlice({
     },
     updateCartItem: (state, action) => {
       const cartItem = action.payload;
-      const index = state.cart.items.findIndex(item => item.id === cartItem.id);
+      const index = state.cart.items.findIndex(item => item.id === cartItem.id &&
+        item.color.value === cartItem.color.value && item.size === cartItem.size);
       if (index !== -1) {
         state.cart.count -= state.cart.items[index].quantity;
         state.cart.items[index].quantity = cartItem.quantity;
@@ -32,11 +34,13 @@ const cartSlice = createSlice({
       localStorage.setItem("cart", JSON.stringify(state.cart))
     },
     deleteCartItem: (state, action) => {
-      const id = action.payload;
-      const index = state.cart.items.findIndex(item => item.id === id);
+      const cartItem = action.payload;
+      const index = state.cart.items.findIndex(item => item.id === cartItem.id && 
+        item.color.value === cartItem.color.value && item.size === cartItem.size);
       if (index !== -1) {
         state.cart.count -= state.cart.items[index].quantity;
-        state.cart.items = state.cart.items.filter(item => item.id !== id)
+        state.cart.items = state.cart.items.filter(item => item.id !== cartItem.id || 
+          item.color.value !== cartItem.color.value || item.size !== cartItem.size)
       }
       localStorage.setItem("cart", JSON.stringify(state.cart))
     }

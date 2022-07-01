@@ -25,6 +25,7 @@ const Products = ({ propose, type }) => {
       .then((data) => {
         const result = data.filter((product) => product.type === type);
         setProducts(result);
+        setVisible(10);
       })
       .catch((error) => {
         console.log(error);
@@ -60,15 +61,21 @@ const Products = ({ propose, type }) => {
               <div
                 className="item-product content col-lg-2-5"
                 key={item.id}
-                style={{ flexBasis: "20%", maxWidth: "20%", padding : "0 10px"}}
+                style={{ flexBasis: "20%", maxWidth: "20%", padding: "0 10px" }}
               >
-                <Product item = {item}/>
+                <Product item={item} />
               </div>
             );
           })}
         </div>
-        <Link to="#" className="more" onClick={()=> {loadmore()}}>
-        {visible < products.length ? "Xem thêm" : "Thu gọn"}
+        <Link
+          to="#"
+          className="more"
+          onClick={() => {
+            loadmore();
+          }}
+        >
+          {visible < products.length ? "Xem thêm" : "Thu gọn"}
         </Link>
       </div>
     </div>

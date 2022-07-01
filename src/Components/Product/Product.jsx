@@ -4,6 +4,8 @@ import "./_product.scss";
 import btn_cart from "../../Assets/Icon/btn_cart.svg";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../Redux/cartSlice";
+import { Link } from "react-router-dom";
+import { showToast } from "../../Redux/toastSlice";
 
 const Product = ({ item, showOption }) => {
   const showImages = (images) => {
@@ -27,23 +29,33 @@ const Product = ({ item, showOption }) => {
         quantity: 1,
       })
     );
-    console.log(item)
+    dispatch(
+      showToast({
+        type: "success",
+        text: "Thêm thành công",
+        isOpen: true,
+      })
+    );
   };
   // console.log(item);
   return (
     <>
-      <a href="#">
-        <div className="product-image">
-          <img src={item.image} alt="" />
-          <img
-            onClick={handleAddToCart}
-            className="btn-add-to-cart"
-            src={btn_cart}
-            alt=""
-          />
-        </div>
+      <div className="wrap-image">
+        <Link to={`/product/${item.id}`}>
+          <div className="product-image">
+            <img src={item.image} alt="" />
+          </div>
+        </Link>
+        <img
+          onClick={handleAddToCart}
+          className="btn-add-to-cart"
+          src={btn_cart}
+          alt=""
+        />
+      </div>
+      <Link to={`/product/${item.id}`}>
         <h3 className="product-name text-align-left">{item.name}</h3>
-      </a>
+      </Link>
       <div className="product-price-box">
         <div className="price">{castToVND(item.price)}</div>
         <div className="price-old">{castToVND(item.priceold)}</div>

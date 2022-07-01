@@ -13,6 +13,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-swiper": "^0.1.5",
+    "react-toastify": "^9.0.5",
     "sass": "^1.50.1",
     "swiper": "^8.1.3",
     "web-vitals": "^2.1.4"

@@ -1,0 +1,272 @@
+@import "../../Styles/variable";
+
+.page-product__detail {
+  margin: 60px 0;
+}
+
+.pview-img {
+  border: 1px solid #ccc;
+}
+
+.nav.nav-tabs {
+  background-color: var(--white-color);
+}
+
+.nav-item {
+  margin-bottom: -10px;
+}
+
+.nav-item span {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  border-color: transparent;
+  border-bottom: 2px solid #2a2a86;
+  cursor: pointer;
+}
+
+.nav-item span:hover {
+  color: var(--text-hover-color);
+}
+
+.tabs-product-content {
+  padding: 30px 0 0 0;
+}
+
+.tpc-detail__content p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.pview-name {
+  margin-bottom: 15px;
+}
+
+.pview-price {
+  display: flex;
+  align-items: center;
+  background: #f4f4ff;
+  padding: 5px 7px;
+  margin: 10px 0 15px 7px;
+}
+
+.pview-price__new b {
+  color: #2a2a86;
+  font-size: 26px;
+  font-weight: 500;
+  font-size: 2.6rem;
+}
+
+.pview-price__old del {
+  color: #858585;
+  margin: 0 10px;
+  font-size: 1.8rem;
+}
+
+.attr-color {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.attr-color label {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.attr-color label span {
+  padding-left: 6px;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.color-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-content__item {
+  min-width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 0.2s all;
+  padding: 0 5px;
+  margin: 6px 10px 10px 0;
+  cursor: pointer;
+}
+
+.color-content__item.active {
+  border: var(--yellow-color) 1px solid;
+  box-shadow: 0 0 2px 2px var(--yellow-color);
+}
+
+.attr-size label {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.attr-size span {
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.size-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size-content__item {
+  min-width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 0.2s all;
+  padding: 0 5px;
+  margin: 6px 10px 10px 0;
+  color: var(--text-color);
+  cursor: pointer;
+  background: #ebebeb;
+}
+
+.size-content__item.active {
+  background: var(--yellow-color);
+  color: #fff;
+}
+
+.pview-quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pview-quantity__box {
+  display: flex;
+  text-align: center;
+}
+
+.pview-quantity label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.qtt-action {
+  cursor: pointer;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  max-width: 42px;
+  max-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-size: 1.6rem;
+  }
+}
+
+.qtt-input {
+  max-width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-right: 0;
+  border-left: 0;
+  padding: 3px 9px;
+  font-size: 1.6rem;
+}
+
+.qtt-action i {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.pview-total-money {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pview-total-money p {
+  font-size: 2rem;
+  color: $black;
+}
+
+.pview-total-money p:last-child {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.pview-box-btn {
+  margin: 18px 0 10px;
+}
+
+.btn--add-to-cart {
+  outline: none;
+  min-width: 350px;
+  min-height: 44px;
+  border: 1px solid $yellow;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  padding: 18px 0;
+  color: $yellow;
+  font-size: 1.8rem;
+  font-weight: bold;
+  span {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    color: $white;
+  }
+  &:hover {
+    background-color: #2d2c81;
+  }
+}
+
+.btn-buy-now {
+  display: block;
+  max-width: 350px;
+  min-height: 44px;
+  background-color: #2d2c81;
+  padding: 18px 0;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  color: $yellow;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  &:hover {
+    color: $white;
+  }
+}
+
+.pview-web-endow {
+  margin-top: 60px;
+}
+
+.pview-web-endow h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.pview-web-endow__content p {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.pview-web-endow__content ul li {
+  font-size: 1.6rem;
+}

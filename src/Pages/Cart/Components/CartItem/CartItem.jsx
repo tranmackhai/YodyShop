@@ -12,7 +12,7 @@ const CartItem = ({ item }) => {
     if (newQuantity > 0) {
       dispatch(updateCartItem({ ...item, quantity: newQuantity }));
     } else {
-      dispatch(deleteCartItem(item.id));
+      dispatch(deleteCartItem(item));
     }
   };
   return (
@@ -32,7 +32,7 @@ const CartItem = ({ item }) => {
                 <div
                   className="cart-btn-remove"
                   onClick={() => {
-                    dispatch(deleteCartItem(item.id));
+                    dispatch(deleteCartItem(item));
                   }}
                 >
                   <img src={cart_remove} alt="" />
