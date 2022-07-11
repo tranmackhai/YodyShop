@@ -3,8 +3,9 @@ import "./_navbar.scss";
 import "../NavMenuDrop/_navmenudrop.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux/es/exports";
 import user from "../../../Assets/Icon/user.svg";
-import cart from "../../../Assets/Icon/cart.svg";
+import cart_icon from "../../../Assets/Icon/cart.svg";
 import heart from "../../../Assets/Icon/heart.svg";
 import img_nu from "../../../Assets/Img/link_image_2_1.webp";
 import img_nam from "../../../Assets/Img/link_image_3_1.webp";
@@ -80,7 +81,7 @@ const list = [
         ],
       },
     ],
-    imgright: img_nu ,
+    imgright: img_nu,
   },
   {
     name: "nam",
@@ -126,8 +127,8 @@ const list = [
         ],
       },
     ],
-    imgleft:  img_nam ,
-    imgright: ""
+    imgleft: img_nam,
+    imgright: "",
   },
   {
     name: "trẻ em",
@@ -160,8 +161,8 @@ const list = [
         items: [{ title: "Phụ kiện khác" }],
       },
     ],
-    imgleft: img_tre_em ,
-    imgright:""
+    imgleft: img_tre_em,
+    imgright: "",
   },
   {
     name: "polo yody",
@@ -220,6 +221,8 @@ const list = [
 ];
 
 const Navbar = () => {
+  const cart = useSelector((state) => state.cart.cart);
+  console.log(cart.length);
   return (
     <div className="navbar">
       <div className="container wrapper-container">
@@ -278,26 +281,31 @@ const Navbar = () => {
             </div>
             <div className="cart">
               <Link to="/cart">
-                <img src={cart} alt="" />
+                <img src={cart_icon} alt="" />
+                {cart.count > 0 && (
+                  <span className="cart-count">{cart.count}</span>
+                )}
               </Link>
-              <div className="cart-drop">
-                <div className="cart-container">
-                  <div className="message">
-                    <img
-                      src="https://bizweb.dktcdn.net/100/438/408/themes/858544/assets/blank_cart.svg?1650243498580"
-                      alt=""
-                    />
-                    <p>Giỏ hàng của bạn trống</p>
-                    <a href="" className="cart-login">
-                      Đăng nhập/Đăng ký
-                    </a>
-                    <span className="clear-fix"></span>
-                    <a href="" className="buy-now">
-                      Mua ngay
-                    </a>
+              {cart.items.length === 0 && (
+                <div className="cart-drop">
+                  <div className="cart-container">
+                    <div className="message">
+                      <img
+                        src="https://bizweb.dktcdn.net/100/438/408/themes/858544/assets/blank_cart.svg?1650243498580"
+                        alt=""
+                      />
+                      <p>Giỏ hàng của bạn trống</p>
+                      <a href="" className="cart-login">
+                        Đăng nhập/Đăng ký
+                      </a>
+                      <span className="clear-fix"></span>
+                      <a href="" className="buy-now">
+                        Mua ngay
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
             <div className="menu-bars">
               <span className="icon-bars">

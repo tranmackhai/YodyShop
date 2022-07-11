@@ -161,7 +161,7 @@
       .header-tool {
         display: flex;
         align-items: center;
-        margin-left: 36px;
+        margin-left: 28px;
         @include tablet {
           margin-left: 8px;
         }
@@ -249,6 +249,17 @@
         .cart {
           z-index: 2;
           position: relative;
+          .cart-count {
+            color: $yellow;
+            background-color: $blue;
+            font-size: 1.4rem;
+            border-radius: 50%;
+            padding: 2px 8px;
+            position: absolute;
+            align-items: center;
+            font-weight: bold;
+            top: calc(0% - 6px);
+          }
           &:hover .cart-drop {
             display: block;
           }
