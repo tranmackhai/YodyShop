@@ -11,6 +11,8 @@ import img_nu from "../../../Assets/Img/link_image_2_1.webp";
 import img_nam from "../../../Assets/Img/link_image_3_1.webp";
 import img_tre_em from "../../../Assets/Img/link_image_4_1.webp";
 import img_yd_love from "../../../Assets/Img/link_image_7_1.webp";
+import logo from "../../../Assets/Icon/logo.svg";
+import blank_cart from "../../../Assets/Icon/blank_cart.svg";
 
 const list = [
   {
@@ -228,7 +230,7 @@ const Navbar = () => {
       <div className="container wrapper-container">
         <div className="navbar-header">
           <Link className="logo" to="/">
-            <img src="https://bizweb.sapocdn.net/100/438/408/themes/862334/assets/logo.svg?1653467688796" />
+            <img src={logo} />
           </Link>
           <ul className="nav-list">
             {list.map((item) => {
@@ -291,7 +293,7 @@ const Navbar = () => {
                   <div className="cart-container">
                     <div className="message">
                       <img
-                        src="https://bizweb.dktcdn.net/100/438/408/themes/858544/assets/blank_cart.svg?1650243498580"
+                        src={blank_cart}
                         alt=""
                       />
                       <p>Giỏ hàng của bạn trống</p>

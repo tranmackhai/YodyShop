@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./_register.scss";
 import "../Login/_login.scss";
-import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer/Footer";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);

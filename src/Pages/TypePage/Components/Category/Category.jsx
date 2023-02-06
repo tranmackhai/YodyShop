@@ -7,7 +7,7 @@ const Category = ({ category }) => {
     <div className="category">
       <div className="container">
         <div className="category-title buy-by">
-          <h3>MUA THEO THỂ LOẠI</h3>
+          <h3>DANH MỤC NỔI BẬT</h3>
         </div>
         <div className="category-content row">
           {category.map((item, index) => {

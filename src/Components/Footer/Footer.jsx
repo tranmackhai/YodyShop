@@ -9,13 +9,14 @@ import "./_footer.scss";
 
 const Footer = () => {
   const social = [
-    "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_1.png?1646731994406",
-    "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_2.png?1646731994406",
-    "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_3.png?1646731994406",
-    "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_4.png?1646731994406",
-    "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_5.png?1646731994406",
-    "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_6.png?1646731994406",
-    "https://bizweb.dktcdn.net/100/438/408/themes/848101/assets/social_7.png?1646731994406",
+    "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675682066/Yody/HomePage/Icon/social_1_xxepui.png",
+    "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675682067/Yody/HomePage/Icon/social_2_hc36kd.png",
+    "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675682066/Yody/HomePage/Icon/social_3_iujkde.png",
+    "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675682066/Yody/HomePage/Icon/social_4_l5bydo.png",
+    "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675682066/Yody/HomePage/Icon/social_5_utwjky.png",
+    "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675682066/Yody/HomePage/Icon/social_6_nafrqq.png",
+    "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675682067/Yody/HomePage/Icon/social_7_e8wxe7.png",
+    
   ];
   const [visible, setVisible] = useState(false);
   const [status, setStatus] = useState(false);

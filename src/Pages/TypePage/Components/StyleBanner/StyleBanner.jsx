@@ -5,7 +5,7 @@ const StyleBanner = ({ style }) => {
   return (
     <div className="style-banner">
       <div className="style-title buy-by">
-        <h3>MUA THEO THỂ LOẠI</h3>
+        <h3>MUA THEO PHONG CÁCH</h3>
       </div>
       <div className="container">
         <div className="content row">
