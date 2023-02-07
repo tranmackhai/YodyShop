@@ -8,12 +8,13 @@ const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState();
   useEffect(() => {
-    fetch(`https://json-server-yodyshop.herokuapp.com/data/${id}`, {
+    fetch(`https://tranmackhai.github.io/api-yody/db.json`, {
       method: "get",
     })
       .then((response) => response.json())
       .then((data) => {
-        setProduct(data);
+        setProduct(data.data.find(item => item.id + "" === id));
+        // console.log("data", data, "id", data.data.find(item => item.id === id) )
       })
       .catch((error) => {
         console.log(error);

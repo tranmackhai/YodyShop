@@ -5,7 +5,7 @@ function PviewRight(props) {
   console.log(product)
   // const { images, description } = product;
   
-
+// console.log(product?.images, color)
   return (
     <div className="col-lg-8 col-md-6 col-12 pview-img">
       <div className="row pview-img-wrapper">

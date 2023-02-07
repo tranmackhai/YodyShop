@@ -13,13 +13,13 @@ const SectionProduct = () => {
   const [products, setProducts] = useState([]);
   const [showProducts, setShowProducts] = useState(14);
   useEffect(() => {
-    fetch("https://json-server-yodyshop.herokuapp.com/data", {
+    fetch("https://tranmackhai.github.io/api-yody/db.json", {
       method: "get",
     })
       .then((response) => response.json())
       .then((data) => {
         // console.log(data);
-        setProducts(data);
+        setProducts(data.data);
       })
       .catch((error) => {
         console.log(error);

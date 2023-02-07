@@ -18,12 +18,12 @@ const Products = ({ propose, type }) => {
     });
   };
   useEffect(() => {
-    fetch("https://json-server-yodyshop.herokuapp.com/data", {
+    fetch("https://tranmackhai.github.io/api-yody/db.json", {
       method: "get",
     })
       .then((response) => response.json())
       .then((data) => {
-        const result = data.filter((product) => product.type === type);
+        const result = data.data.filter((product) => product.type === type);
         setProducts(result);
         setVisible(10);
       })

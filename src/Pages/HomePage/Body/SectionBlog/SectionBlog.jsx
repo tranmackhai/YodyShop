@@ -62,7 +62,7 @@ const list_blog = [
   },
   {
     image:
-      "https://bizweb.dktcdn.net/100/438/408/articles/chinh-sach-giam-gia-san-pham-yody-vn.jpg?v=1634608923990",
+      "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675767325/Yody/Product/cach-ap-ma-giam-gia-20k-tren-website-yody-vn_zipsbp.jpg",
     title: "Chính sách giảm giá sản phẩm của YODY",
     description:
       "YODY thông báo về Chính sách giảm giá sản phẩm trên toàn hệ thống. Chương trình được áp dụng cho tất cả khách hàng khi mua trực tiếp tại các cửa hàng hoặc qua website Yody.vn.",

@@ -130,7 +130,7 @@ const list = [
       },
     ],
     imgleft: img_nam,
-    imgright: "",
+    imgright: "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675773328/Yody/HomePage/BGR/link_image_3_1_tqwnvw.jpg",
   },
   {
     name: "trẻ em",
@@ -164,7 +164,7 @@ const list = [
       },
     ],
     imgleft: img_tre_em,
-    imgright: "",
+    imgright: "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675773206/Yody/HomePage/BGR/link_image_4_1_twkoyz.jpg",
   },
   {
     name: "polo yody",
@@ -224,7 +224,7 @@ const list = [
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart.cart);
-  console.log(cart.length);
+  // console.log(cart.length);
   return (
     <div className="navbar">
       <div className="container wrapper-container">

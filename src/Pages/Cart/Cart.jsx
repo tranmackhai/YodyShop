@@ -15,12 +15,12 @@ const Cart = () => {
   // console.log(cart);
 
   useEffect(() => {
-    fetch("https://json-server-yodyshop.herokuapp.com/data", {
+    fetch("https://tranmackhai.github.io/api-yody/db.json", {
       method: "get",
     })
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data);
+        setProducts(data.data);
       })
       .catch((error) => {
         console.log(error);

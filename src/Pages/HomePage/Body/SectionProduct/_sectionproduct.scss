@@ -71,7 +71,7 @@
       }
       .product-image{
         img{
-          max-height: 253px;
+          max-height: 253px !important;
           object-fit: cover;
         }
         @include mobile {

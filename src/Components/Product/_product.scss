@@ -15,6 +15,9 @@
     overflow: hidden;
     border: 0.8px solid rgb(243, 237, 237);
     position: relative;
+    img {
+      height: 307px;
+    }
     &:hover {
       img:first-child {
         transform: scale(1.1);
