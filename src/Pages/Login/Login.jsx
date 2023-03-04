@@ -31,18 +31,18 @@ const Login = () => {
                 <p className="a-center or">
                   <span>--- Hoặc ---</span>
                 </p>
-                <a href="social-login-facebook">
+                <Link to="social-login-facebook">
                   <img
                     src="https://bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg"
                     alt=""
                   />
-                </a>
-                <a href="social-login-google">
+                </Link>
+                <Link to="social-login-google">
                   <img
                     src="https://bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

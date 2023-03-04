@@ -4,9 +4,11 @@
 * {
   box-sizing: border-box;
 }
+
 .container {
   max-width: 1260px;
 }
+
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
@@ -14,17 +16,31 @@ html {
   scroll-behavior: smooth;
 }
 
-a:hover {
+body {
+  font-family: "SVN-Gilroy";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+a {
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #7a7a9d;
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-track {
   background: #dde1ef;
   border-radius: 3px;
@@ -44,9 +60,11 @@ a:hover {
   font-weight: 500;
   color: $white;
   border: 1px solid $yellow;
+
   @include mobile {
     margin-bottom: 12px;
   }
+
   &:hover {
     background-color: $white;
     color: $yellow;
@@ -58,9 +76,11 @@ a:hover {
   text-align: center;
   padding: 30px 0 30px 0;
   text-transform: uppercase;
+
   h2 {
     margin: 0;
   }
+
   @include mobile {
     padding: 20px 0 12px 0;
   }
@@ -69,7 +89,8 @@ a:hover {
 .margin-right-12 {
   margin-right: 12px;
 }
-.text-align-left{
+
+.text-align-left {
   text-align: left;
 }
 

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 const list_blog = [
   {
@@ -112,13 +113,13 @@ const SectionBlog = () => {
                 return (
                   <SwiperSlide key={index}>
                     <div className="blog-image">
-                      <a href="">
+                      <Link to="">
                         <img src={blog.image} alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="box-infor">
                       <div className="blog-title">
-                        <a href="">{blog.title}</a>
+                        <Link to="">{blog.title}</Link>
                       </div>
                       <div className="blog-description">{blog.description}</div>
                       <div className="blog-time">
@@ -134,7 +135,7 @@ const SectionBlog = () => {
             </Swiper>
           </>
         </div>
-        <a href="" className="more">Xem thêm</a>
+        <Link to="" className="more">Xem thêm</Link>
       </div>
     </div>
   );

@@ -33,12 +33,12 @@ const SectionProduct = () => {
           <h2>EVERYDAY WEAR</h2>
         </div>
         <div className="section-image">
-          <a href="">
+          <Link to="">
             <img
               src={logo_everyday}
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="product-content">
           <>

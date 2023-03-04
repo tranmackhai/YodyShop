@@ -73,7 +73,7 @@
             }
           }
 
-          .item-href {
+          .item-to {
             display: flex;
             align-items: center;
             font-weight: 500;
@@ -211,6 +211,13 @@
               height: 18px;
               top: -22%;
               right: 0;
+            }
+            .logout{
+              cursor: pointer;
+              color: $black;
+              &:hover {
+                color: $yellow;
+              }
             }
             li {
               padding: 6px 12px;

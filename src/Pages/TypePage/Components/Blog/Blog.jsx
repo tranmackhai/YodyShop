@@ -47,13 +47,13 @@ const Blog = ({ blog }) => {
                 return (
                   <SwiperSlide key={index}>
                     <div className="blog-image">
-                      <a href="">
+                      <Link to="">
                         <img src={item.image} alt="" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="box-infor">
                       <div className="blog-title">
-                        <a href="">{item.title}</a>
+                        <Link to="">{item.title}</Link>
                       </div>
                       <div className="blog-description">{item.description}</div>
                       <div className="blog-time">

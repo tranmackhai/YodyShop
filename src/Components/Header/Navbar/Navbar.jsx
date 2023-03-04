@@ -2,9 +2,9 @@ import React from "react";
 import "./_navbar.scss";
 import "../NavMenuDrop/_navmenudrop.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux/es/exports";
-import user from "../../../Assets/Icon/user.svg";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import usersvg from "../../../Assets/Icon/user.svg";
 import cart_icon from "../../../Assets/Icon/cart.svg";
 import heart from "../../../Assets/Icon/heart.svg";
 import img_nu from "../../../Assets/Img/link_image_2_1.webp";
@@ -13,6 +13,8 @@ import img_tre_em from "../../../Assets/Img/link_image_4_1.webp";
 import img_yd_love from "../../../Assets/Img/link_image_7_1.webp";
 import logo from "../../../Assets/Icon/logo.svg";
 import blank_cart from "../../../Assets/Icon/blank_cart.svg";
+import { apiLogout } from "../../../Apis/auth";
+import { authAction } from "../../../Redux/authSlice";
 
 const list = [
   {
@@ -130,7 +132,8 @@ const list = [
       },
     ],
     imgleft: img_nam,
-    imgright: "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675773328/Yody/HomePage/BGR/link_image_3_1_tqwnvw.jpg",
+    imgright:
+      "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675773328/Yody/HomePage/BGR/link_image_3_1_tqwnvw.jpg",
   },
   {
     name: "trẻ em",
@@ -164,7 +167,8 @@ const list = [
       },
     ],
     imgleft: img_tre_em,
-    imgright: "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675773206/Yody/HomePage/BGR/link_image_4_1_twkoyz.jpg",
+    imgright:
+      "https://res.cloudinary.com/dhypn6jgk/image/upload/v1675773206/Yody/HomePage/BGR/link_image_4_1_twkoyz.jpg",
   },
   {
     name: "polo yody",
@@ -224,6 +228,18 @@ const list = [
 
 const Navbar = () => {
   const cart = useSelector((state) => state.cart.cart);
+  const { user } = useSelector((state) => state.auth);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const handleClick = async () => {
+    try {
+      const res = await apiLogout();
+      if (res.message === "Đăng xuất thành công") {
+        dispatch(authAction.login({user: null, accessToken: ""}))
+        navigate("/");
+      }
+    } catch (error) {}
+  };
   // console.log(cart.length);
   return (
     <div className="navbar">
@@ -236,7 +252,7 @@ const Navbar = () => {
             {list.map((item) => {
               return (
                 <li className="nav-item" key={item.name}>
-                  <Link className="item-href" to={item?.link}>
+                  <Link className="item-to" to={item?.link}>
                     {item.name}
                   </Link>
                   {item.list && (
@@ -264,15 +280,21 @@ const Navbar = () => {
           <div className="header-tool">
             <div className="user">
               <Link to="/login">
-                <img src={user} alt="" />
+                <img src={usersvg} alt="user" />
               </Link>
               <ul className="account-header">
-                <li>
-                  <Link to="/register">Đăng ký</Link>
-                </li>
-                <li>
-                  <Link to="/login">Đăng nhập</Link>
-                </li>
+                {user ? (
+                  <li className="logout" onClick={handleClick}>Đăng xuất</li>
+                ) : (
+                  <>
+                    <li>
+                      <Link to="/register">Đăng ký</Link>
+                    </li>
+                    <li>
+                      <Link to="/login">Đăng nhập</Link>
+                    </li>
+                  </>
+                )}
               </ul>
             </div>
             <div className="like">
@@ -292,18 +314,15 @@ const Navbar = () => {
                 <div className="cart-drop">
                   <div className="cart-container">
                     <div className="message">
-                      <img
-                        src={blank_cart}
-                        alt=""
-                      />
+                      <img src={blank_cart} alt="" />
                       <p>Giỏ hàng của bạn trống</p>
-                      <a href="" className="cart-login">
+                      <Link to="" className="cart-login">
                         Đăng nhập/Đăng ký
-                      </a>
+                      </Link>
                       <span className="clear-fix"></span>
-                      <a href="" className="buy-now">
+                      <Link to="" className="buy-now">
                         Mua ngay
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -322,18 +341,18 @@ const Navbar = () => {
                     <div key={item.name}>
                       <ul className="nav-item">
                         <li className="nav-item">
-                          <a href="" className="item-href">
+                          <Link to="" className="item-to">
                             {item.name}
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                       <ul className="">
                         {item.list.map((element) => {
                           return (
                             <li className="title" key={element.title}>
-                              <a href="" className="item-link">
+                              <Link to="" className="item-link">
                                 {element.title}
-                              </a>
+                              </Link>
                             </li>
                           );
                         })}

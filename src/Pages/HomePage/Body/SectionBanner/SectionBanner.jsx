@@ -9,6 +9,7 @@ import banner_1 from "../../../../Assets/Banner/b1.webp";
 import banner_2 from "../../../../Assets/Banner/b2.webp";
 import banner_3 from "../../../../Assets/Banner/b3.webp";
 import banner_4 from "../../../../Assets/Banner/b5.webp";
+import { Link } from "react-router-dom";
 
 const SectionBanner = () => {
   return (
@@ -18,20 +19,20 @@ const SectionBanner = () => {
           <h2>#YODY</h2>
         </div>
         <div className="img-effect">
-          <a href="">
+          <Link to="">
             <img
               src={banner_1}
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="img-effect">
-          <a href="">
+          <Link to="">
             <img
               src={banner_2}
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="image-swiper">
           <Swiper
@@ -45,22 +46,22 @@ const SectionBanner = () => {
           >
             <SwiperSlide>
               <div className="img-effect">
-                <a href="#">
+                <Link to="#">
                   <img
                     src={banner_3}
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="img-effect">
-                <a href="#">
+                <Link to="#">
                   <img
                     src= {banner_4}
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
             </SwiperSlide>
           </Swiper>

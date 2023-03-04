@@ -81,9 +81,9 @@ const Footer = () => {
               {social.map((icon) => {
                 return (
                   <div className="icon" key={icon}>
-                    <a href="">
+                    <Link to="">
                       <img src={icon} alt="" />
-                    </a>
+                    </Link>
                   </div>
                 );
               })}
@@ -113,19 +113,19 @@ const Footer = () => {
             {status ? (
               <ul className="menu-mobile">
                 <li className="menu-item">
-                  <a href="">Giới thiệu</a>
+                  <Link to="">Giới thiệu</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Liên hệ</a>
+                  <Link to="">Liên hệ</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Tuyển dụng</a>
+                  <Link to="">Tuyển dụng</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Tin tức</a>
+                  <Link to="">Tin tức</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Hệ thống cửa hàng</a>
+                  <Link to="">Hệ thống cửa hàng</Link>
                 </li>
               </ul>
             ) : (
@@ -133,19 +133,19 @@ const Footer = () => {
             )}
             <ul className="menu">
               <li className="menu-item">
-                <a href="">Giới thiệu</a>
+                <Link to="">Giới thiệu</Link>
               </li>
               <li className="menu-item">
-                <a href="">Liên hệ</a>
+                <Link to="">Liên hệ</Link>
               </li>
               <li className="menu-item">
-                <a href="">Tuyển dụng</a>
+                <Link to="">Tuyển dụng</Link>
               </li>
               <li className="menu-item">
-                <a href="">Tin tức</a>
+                <Link to="">Tin tức</Link>
               </li>
               <li className="menu-item">
-                <a href="">Hệ thống cửa hàng</a>
+                <Link to="">Hệ thống cửa hàng</Link>
               </li>
             </ul>
           </div>
@@ -173,19 +173,19 @@ const Footer = () => {
             {status2 ? (
               <ul className="menu-mobile">
                 <li className="menu-item">
-                  <a href="">Hướng dẫn chọn size</a>
+                  <Link to="">Hướng dẫn chọn size</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Chính sách khách hàng thân thiết</a>
+                  <Link to="">Chính sách khách hàng thân thiết</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Chính sách đổi/trả</a>
+                  <Link to="">Chính sách đổi/trả</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Chính sách bảo mật</a>
+                  <Link to="">Chính sách bảo mật</Link>
                 </li>
                 <li className="menu-item">
-                  <a href="">Thanh toán, giao nhận</a>
+                  <Link to="">Thanh toán, giao nhận</Link>
                 </li>
               </ul>
             ) : (
@@ -193,19 +193,19 @@ const Footer = () => {
             )}
             <ul className="menu">
               <li className="menu-item">
-                <a href="">Hướng dẫn chọn size</a>
+                <Link to="">Hướng dẫn chọn size</Link>
               </li>
               <li className="menu-item">
-                <a href="">Chính sách khách hàng thân thiết</a>
+                <Link to="">Chính sách khách hàng thân thiết</Link>
               </li>
               <li className="menu-item">
-                <a href="">Chính sách đổi/trả</a>
+                <Link to="">Chính sách đổi/trả</Link>
               </li>
               <li className="menu-item">
-                <a href="">Chính sách bảo mật</a>
+                <Link to="">Chính sách bảo mật</Link>
               </li>
               <li className="menu-item">
-                <a href="">Thanh toán, giao nhận</a>
+                <Link to="">Thanh toán, giao nhận</Link>
               </li>
             </ul>
           </div>
@@ -250,9 +250,9 @@ const Footer = () => {
                     alt=""
                   />
                   <div className="block-text">
-                    <a href="">Liên hệ đặt hàng: 024 730 56665</a>
-                    <a href="">Thắc mắc đơn hàng: 024 730 16661</a>
-                    <a href="">Góp ý khiếu nại: 1800 2086</a>
+                    <Link to="">Liên hệ đặt hàng: 024 730 56665</Link>
+                    <Link to="">Thắc mắc đơn hàng: 024 730 16661</Link>
+                    <Link to="">Góp ý khiếu nại: 1800 2086</Link>
                   </div>
                 </li>
                 <li className="menu-item last-text">
@@ -260,9 +260,9 @@ const Footer = () => {
                     src="https://bizweb.sapocdn.net/100/438/408/themes/858544/assets/email.svg?1650954863867"
                     alt=""
                   />
-                  <a href="tranmackhai@gmail.com">
+                  <Link to="tranmackhai@gmail.com">
                     Email: chamsockhachhang@yody.vn
-                  </a>
+                  </Link>
                 </li>
               </ul>
             ) : (
@@ -287,9 +287,9 @@ const Footer = () => {
                   alt=""
                 />
                 <div className="block-text">
-                  <a href="">Liên hệ đặt hàng: 024 730 56665</a>
-                  <a href="">Thắc mắc đơn hàng: 024 730 16661</a>
-                  <a href="">Góp ý khiếu nại: 1800 2086</a>
+                  <Link to="">Liên hệ đặt hàng: 024 730 56665</Link>
+                  <Link to="">Thắc mắc đơn hàng: 024 730 16661</Link>
+                  <Link to="">Góp ý khiếu nại: 1800 2086</Link>
                 </div>
               </li>
               <li className="menu-item last-text">
@@ -297,9 +297,9 @@ const Footer = () => {
                   src={email}
                   alt=""
                 />
-                <a href="tranmackhai@gmail.com">
+                <Link to="tranmackhai@gmail.com">
                   Email: chamsockhachhang@yody.vn
-                </a>
+                </Link>
               </li>
             </ul>
             <img

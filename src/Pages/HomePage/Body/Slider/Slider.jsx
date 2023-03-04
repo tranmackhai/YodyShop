@@ -9,6 +9,7 @@ import slider_1 from "../../../../Assets/Slider/slider_1.webp"
 import slider_2 from "../../../../Assets/Slider/slider_2.webp"
 import slider_3 from "../../../../Assets/Slider/slider_3.webp"
 import slider_4 from "../../../../Assets/Slider/slider_4.webp"
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   const srcImg = [
@@ -30,9 +31,9 @@ const Slider = () => {
         {srcImg.map((img, index) => {
           return (
             <SwiperSlide key={index}>
-              <a href="">
+              <Link to="">
                 <img className="header-Slider w-100" src={img} alt="" />
-              </a>
+              </Link>
             </SwiperSlide>
           );
         })}

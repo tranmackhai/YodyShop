@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import "./_navmenudrop.scss";
 
 const NavMenuDrop = ({ list, imgleft, imgright }) => {
@@ -18,16 +19,16 @@ const NavMenuDrop = ({ list, imgleft, imgright }) => {
               return (
                 <ul className="col" style={{}} key={item.title}>
                   <li className="title">
-                    <a className="item-link" href="">
+                    <Link className="item-link" to="">
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                   {item.items.map((value, index) => {
                     return (
                       <li className="item" key={index}>
-                        <a className="item-link" href="">
+                        <Link className="item-link" to="">
                           {value.title}
-                        </a>
+                        </Link>
                       </li>
                     );
                   })}
