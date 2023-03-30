@@ -12,8 +12,9 @@ const Cart = () => {
   const [products, setProducts] = useState([]);
   const [showProducts, setShowProducts] = useState(18);
   const cart = useSelector((state) => state.cart.cart);
+  // console.log(user)
   // console.log(cart);
-
+  
   useEffect(() => {
     fetch("https://tranmackhai.github.io/api-yody/db.json", {
       method: "get",

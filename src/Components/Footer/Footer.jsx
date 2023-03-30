@@ -95,7 +95,7 @@ const Footer = () => {
                 Về Yody
                 {status ? (
                   <i
-                    class="icon-up fa-solid fa-caret-up"
+                    className="icon-up fa-solid fa-caret-up"
                     onClick={() => {
                       setStatus(false);
                     }}
@@ -155,7 +155,7 @@ const Footer = () => {
                 HỖ TRỢ KHÁCH HÀNG
                 {status2 ? (
                   <i
-                    class="icon-up fa-solid fa-caret-up"
+                    className="icon-up fa-solid fa-caret-up"
                     onClick={() => {
                       setStatus2(false);
                     }}
@@ -215,7 +215,7 @@ const Footer = () => {
                 CÔNG TY CỔ PHẦN THỜI TRANG YODY
                 {status3 ? (
                   <i
-                    class="icon-up fa-solid fa-caret-up"
+                    className="icon-up fa-solid fa-caret-up"
                     onClick={() => {
                       setStatus3(false);
                     }}

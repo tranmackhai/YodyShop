@@ -4,7 +4,7 @@ import TopBar from "./TopBar/TopBar";
 
 const Header = () => {
   return (
-    <div>
+    <div className="wrapper-header" >
       <TopBar />
       <Navbar />
     </div>

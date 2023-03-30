@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./_navbar.scss";
 import "../NavMenuDrop/_navmenudrop.scss";
 import NavMenuDrop from "../NavMenuDrop/NavMenuDrop";
@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import usersvg from "../../../Assets/Icon/user.svg";
 import cart_icon from "../../../Assets/Icon/cart.svg";
-import heart from "../../../Assets/Icon/heart.svg";
+// import heart from "../../../Assets/Icon/heart.svg";
 import img_nu from "../../../Assets/Img/link_image_2_1.webp";
 import img_nam from "../../../Assets/Img/link_image_3_1.webp";
 import img_tre_em from "../../../Assets/Img/link_image_4_1.webp";
@@ -18,8 +18,8 @@ import { authAction } from "../../../Redux/authSlice";
 
 const list = [
   {
-    name: "xuân hè 2022",
-    link: "/xuan-he",
+    name: "xuân hè 2023",
+    link: "/",
   },
   {
     name: "nữ",
@@ -227,6 +227,7 @@ const list = [
 ];
 
 const Navbar = () => {
+  const [active, setActive] = useState(list[0]);
   const cart = useSelector((state) => state.cart.cart);
   const { user } = useSelector((state) => state.auth);
   const navigate = useNavigate();
@@ -235,7 +236,7 @@ const Navbar = () => {
     try {
       const res = await apiLogout();
       if (res.message === "Đăng xuất thành công") {
-        dispatch(authAction.login({user: null, accessToken: ""}))
+        dispatch(authAction.login({ user: null, accessToken: "" }));
         navigate("/");
       }
     } catch (error) {}
@@ -251,8 +252,16 @@ const Navbar = () => {
           <ul className="nav-list">
             {list.map((item) => {
               return (
-                <li className="nav-item" key={item.name}>
-                  <Link className="item-to" to={item?.link}>
+                <li className="nav-item " key={item.name}>
+                  <Link
+                    className={
+                      active.name === item.name ? "item-to-active" : "item-to"
+                    }
+                    to={item?.link}
+                    onClick={() => {
+                      setActive(item);
+                    }}
+                  >
                     {item.name}
                   </Link>
                   {item.list && (
@@ -279,12 +288,48 @@ const Navbar = () => {
           </div>
           <div className="header-tool">
             <div className="user">
-              <Link to="/login">
+              <Link to={`${user ? "/account" : "/login"}`}>
                 <img src={usersvg} alt="user" />
               </Link>
               <ul className="account-header">
                 {user ? (
-                  <li className="logout" onClick={handleClick}>Đăng xuất</li>
+                  <>
+                    <li
+                      style={{
+                        color: "#fcaf17",
+                        borderBottom: "1px solid #dde1ef",
+                      }}
+                    >
+                      Hi {user.first_name}
+                    </li>
+                    <li>
+                      <Link to="/account">Tài khoản của tôi</Link>
+                    </li>
+                    <li>
+                      <Link to="/change-password">Đổi mật khẩu</Link>
+                    </li>
+                    <li>
+                      <Link to="/location">Sổ địa chỉ</Link>
+                    </li>
+                    <li>
+                      <Link to="/recently-viewed">Đã xem gần đây</Link>
+                    </li>
+                    <li>
+                      <Link to="/like">Sản phẩm yêu thích</Link>
+                    </li>
+
+                    <li
+                      className="logout"
+                      onClick={handleClick}
+                      style={{ borderTop: "1px solid #dde1ef" }}
+                    >
+                      <i
+                        className="fa-solid fa-right-from-bracket"
+                        style={{ marginRight: "6px" }}
+                      ></i>
+                      Đăng xuất
+                    </li>
+                  </>
                 ) : (
                   <>
                     <li>
@@ -297,12 +342,12 @@ const Navbar = () => {
                 )}
               </ul>
             </div>
-            <div className="like">
+            {/* <div className="like">
               <Link to="/like">
                 <img src={heart} alt="" />
                 <span className="message-box">Sản phẩm yêu thích</span>
               </Link>
-            </div>
+            </div> */}
             <div className="cart">
               <Link to="/cart">
                 <img src={cart_icon} alt="" />
@@ -316,9 +361,13 @@ const Navbar = () => {
                     <div className="message">
                       <img src={blank_cart} alt="" />
                       <p>Giỏ hàng của bạn trống</p>
-                      <Link to="" className="cart-login">
-                        Đăng nhập/Đăng ký
-                      </Link>
+                      {!user ? (
+                        <Link to="/login" className="cart-login">
+                          Đăng nhập/Đăng ký
+                        </Link>
+                      ) : (
+                        <></>
+                      )}
                       <span className="clear-fix"></span>
                       <Link to="" className="buy-now">
                         Mua ngay

@@ -1,0 +1,18 @@
+@import "../../../../Styles/variable";
+
+.header-content {
+  .last-title-infor{
+    color: $white;
+    background-color: $yellow;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+}
+.body-content {
+  justify-content: space-between;
+}
+.body-account{
+  flex-direction: row !important;
+  margin-top: 0% !important;
+}

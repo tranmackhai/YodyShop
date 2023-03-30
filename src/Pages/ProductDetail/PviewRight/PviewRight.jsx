@@ -114,7 +114,7 @@ function PviewRight(props) {
               onClick={() => handleAddToCart(product, qtt)}
             >
               <span>
-                <i class="fa-solid fa-cart-plus"></i>
+                <i className="fa-solid fa-cart-plus"></i>
               </span>
               Thêm giỏ hàng
             </button>

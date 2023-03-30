@@ -21,7 +21,7 @@ const Register = () => {
   const onSubmit = async (data) => {
     try {
       const res = await apiRegister(data);
-      console.log(res);
+      // console.log(res);
       if (res.user) {
         dispatch(authAction.login(res));
         navigate("/");

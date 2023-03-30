@@ -18,6 +18,13 @@
       .header {
         color: $yellow;
       }
+      .error {
+        background-color: #fff3f4;
+        padding: 8px 24px;
+        margin-bottom: 6px;
+        font-size: 1.4rem;
+        color: #f5222d;
+      }
       .text-input {
         margin-bottom: 12px;
         font-size: 1.4rem;

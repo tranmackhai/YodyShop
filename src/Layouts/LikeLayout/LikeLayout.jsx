@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import SideBar from "../../Pages/LikePage/SideBar/SideBar";
@@ -24,28 +24,32 @@ const LikeLayout = ({ children }) => {
       icon: User1,
       icon_active: User1Active,
       title: "Tài khoản của tôi",
-      link: "/user",
+      header_title: "Tài khoản",
+      link: "/account",
     },
     {
       active: false,
       icon: User2,
       icon_active: User2Active,
+      header_title: "Tài khoản",
       title: "Đơn hàng của tôi",
-      link: "/user",
+      link: "/your-order",
     },
     {
       active: false,
       icon: User3,
       icon_active: User3Active,
       title: "Đổi mật khẩu",
-      link: "/user",
+      header_title: "Tài khoản",
+      link: "/change-password",
     },
     {
       active: false,
       icon: User4,
       icon_active: User4Active,
       title: "Sổ địa chỉ",
-      link: "/user",
+      header_title: "Tài khoản",
+      link: "/location",
     },
     {
       active: false,
@@ -64,7 +68,15 @@ const LikeLayout = ({ children }) => {
       link: "/like",
     },
   ];
-  const [active, setActive] = useState(list_item[list_item.length - 1].title);
+  const location = useLocation();
+  const [active, setActive] = useState("");
+  useEffect(() => {
+    const item = list_item.find((item) => item.link === location.pathname);
+    if (item) {
+      setActive(item.title);
+    }
+  }, [location.pathname]);
+
   return (
     <>
       <Header />
@@ -78,7 +90,7 @@ const LikeLayout = ({ children }) => {
             <span className="text-like">{active}</span>
           </div>
           <h2 className="title-header">
-            {list_item.find((item) => item.title === active).header_title}
+            {list_item.find((item) => item.title === active)?.header_title}
           </h2>
           <div className="like-content container">
             <div className="row">

@@ -19,7 +19,8 @@ const list_blog = [
   {
     image:
       "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/phoi-mau-quan-ao.jpg?v=1650962053893",
-    title: "Bật mí 8 mẹo phối màu quần áo phong cách, sành điệu cho từng hoàn cảnh",
+    title:
+      "Bật mí 8 mẹo phối màu quần áo phong cách, sành điệu cho từng hoàn cảnh",
     description:
       "   Nắm được những cách phối màu quần áo sau đây sẽ giúp bạn có thể mặc đẹp mỗi ngày, và biến mọi outfit trở nên thật sành điệu dù là đi học, đi chơi hay đi làm.",
     icon: "fa-solid fa-clock",
@@ -27,10 +28,11 @@ const list_blog = [
   },
   {
     image:
-      "https://bizweb.sapocdn.net/thumb/grande/100/438/408/articles/sinh-nhat-yody-8-tuoi.png?v=1648733773757",
-    title: "Mừng sinh nhật YODY 8 tuổi - Tặng 8888 phần quà miễn phí ",
+      "https://bizweb.dktcdn.net/100/438/408/articles/ao-so-mi-nu-cao-cap-hang-hieu-yody-vn.jpg?v=1679543869893",
+    title:
+      "TOP 10 áo sơ mi nữ cao cấp hàng hiệu uy tín được ưa chuộng nhất 2023",
     description:
-      "   Kỷ niệm sinh nhật 8 tuổi, YODY tổ chức chương trình tri ân lớn dành tặng đến tất cả khách hàng. Những món quà “cực hấp dẫn” đang chờ đón bạn vào tháng 4 này. Chương trình diễn ra từ 1/4 - 1/5/2022.",
+      "Áo sơ mi nữ được xem là món đồ không thể thiếu trong tủ đồ của các cô gái, nhất là đối với các cô nàng công sở. Vậy, áo sơ mi nữ cao cấp hàng hiệu nào đang được ưa chuộng? Cùng YODY giải mã ngay với bài viết dưới đây nhé!",
     icon: "fa-solid fa-clock",
     time: "28/04/2022",
   },
@@ -135,7 +137,9 @@ const SectionBlog = () => {
             </Swiper>
           </>
         </div>
-        <Link to="" className="more">Xem thêm</Link>
+        <Link to="" className="more">
+          Xem thêm
+        </Link>
       </div>
     </div>
   );

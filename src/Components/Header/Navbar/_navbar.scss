@@ -1,5 +1,5 @@
-@import "../../../Styles/variable.scss";
-@import "../../../Styles/animation.scss";
+@import "../../../Styles/variable";
+@import "../../../Styles/animation";
 @import "../../../Styles/responsive";
 
 .navbar {
@@ -67,12 +67,6 @@
               display: flex;
             }
           }
-          &:first-child {
-            a {
-              color: $yellow;
-            }
-          }
-
           .item-to {
             display: flex;
             align-items: center;
@@ -81,6 +75,15 @@
             color: $dark;
             position: relative;
             height: 100%;
+            &-active {
+              display: flex;
+              align-items: center;
+              font-weight: 500;
+              text-transform: uppercase;
+              color: $yellow;
+              position: relative;
+              height: 100%;
+            }
             &:hover {
               &::before {
                 width: 100%;
@@ -196,23 +199,23 @@
             font-size: 1.4rem;
             font-weight: 400;
             min-width: 172px;
-            height: 70px;
             background-color: $white;
             right: 0;
             top: calc(100% + 12px);
             display: none;
             margin: 0;
             padding: 0;
+            border-radius: 2px;
             &::after {
               content: "";
               position: absolute;
-              width: 30px;
+              width: 40px;
               background-color: transparent;
               height: 18px;
-              top: -22%;
+              top: -15px;
               right: 0;
             }
-            .logout{
+            .logout {
               cursor: pointer;
               color: $black;
               &:hover {
@@ -223,6 +226,7 @@
               padding: 6px 12px;
               a {
                 color: $black;
+                font-weight: 500;
                 &:hover {
                   color: $yellow;
                 }
@@ -230,29 +234,29 @@
             }
           }
         }
-        .like {
-          position: relative;
-          transition: 2s;
-          @include mobile {
-            display: none;
-          }
-          &:hover .message-box {
-            display: block;
-          }
-          .message-box {
-            display: none;
-            position: absolute;
-            font-size: 1.4rem;
-            color: $black;
-            width: 130px;
-            z-index: 4;
-            border: 1px solid $black;
-            background-color: $white;
-            top: 50%;
-            left: calc(100% + 4px);
-            transform: translateY(50%);
-          }
-        }
+        // .like {
+        //   position: relative;
+        //   transition: 2s;
+        //   @include mobile {
+        //     display: none;
+        //   }
+        //   &:hover .message-box {
+        //     display: block;
+        //   }
+        //   .message-box {
+        //     display: none;
+        //     position: absolute;
+        //     font-size: 1.4rem;
+        //     color: $black;
+        //     width: 130px;
+        //     z-index: 4;
+        //     border: 1px solid $black;
+        //     background-color: $white;
+        //     top: 50%;
+        //     left: calc(100% + 4px);
+        //     transform: translateY(50%);
+        //   }
+        // }
         .cart {
           z-index: 2;
           position: relative;

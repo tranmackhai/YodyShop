@@ -20,6 +20,9 @@ const Product = ({ item, showOption }) => {
     return arr;
   };
   const dispatch = useDispatch();
+  const handleAddToFavorites = ()=>{
+    
+  }
   const handleAddToCart = () => {
     dispatch(
       addToCart({
@@ -46,6 +49,13 @@ const Product = ({ item, showOption }) => {
             <img src={item.image} alt="" />
           </div>
         </Link>
+        {/* <img
+          className="btn-add-to-cart"
+          style={{ top: "0", width: "17px" }}
+          // src={heart}
+          alt=""
+          onClick={handleAddToFavorites}
+        /> */}
         <img
           onClick={handleAddToCart}
           className="btn-add-to-cart"
